@@ -364,7 +364,7 @@
 		if($head != '')
 ?>
 <?php echo $head; ?>
-<?
+<?php
 	}
 
 	function seed_fb_comment() {
@@ -378,7 +378,7 @@
   js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=<?php facebook_app_id(); ?>";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-<?
+<?php
 		}
 	}
 
