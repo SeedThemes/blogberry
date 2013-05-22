@@ -1,4 +1,4 @@
-blogberry
+Blogberry
 =========
 
 WordPress Theme for blog
