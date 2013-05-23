@@ -14,6 +14,8 @@
 	</article>
 <?php endwhile; ?>
 
+<?php seed_socials(); ?>
+
 <?php seed_comment(); ?>
 
 
