@@ -188,6 +188,10 @@ body.font-th #brand .title{
 	color: rgba(51, 51, 51, 0.8);
 }
 
+#nav li ul{
+	display: none;
+}
+
 body.font-th #nav li{
 	font-size: 18px;
 }
