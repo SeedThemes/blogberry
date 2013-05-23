@@ -241,6 +241,7 @@ body.font-th #nav li{
 
 #intro{
 	padding: 30px 45px;
+	font-size: 26px;
 }
 
 .slabtexted .slabtext{display:-moz-inline-box;display:inline-block;white-space:nowrap}

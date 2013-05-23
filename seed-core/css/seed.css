@@ -137,7 +137,10 @@ li.comment li.comment{
 	margin: 10px 0;
 	position: relative;
 }
-#commentform label{
+.comment-form-author label,
+.comment-form-email label,
+.comment-form-url label,
+.comment-form-comment label{
 	position: absolute;
 	top: 0;
 	left: 0;
