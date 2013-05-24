@@ -47,7 +47,7 @@ add_filter( 'wp_title', 'seed_wp_title', 10, 2 );
 function seed_widgets_init() {
 	register_sidebar( array(
 		'name' => __( 'Side Area', 'seed' ),
-		'id' => 'sidebar-main',
+		'id' => 'seed-sidebar-main',
 		'description' => __( 'Appears on side, recommend for 160px width banners', 'seed' ),
 		'before_widget' => '<li id="%1$s" class="widget %2$s">',
 		'after_widget' => '</li>',
@@ -57,7 +57,7 @@ function seed_widgets_init() {
 
 	register_sidebar( array(
 		'name' => __( 'Footer Area', 'seed' ),
-		'id' => 'sidebar-foot',
+		'id' => 'seed-sidebar-foot',
 		'description' => __( 'Appears below content', 'seed' ),
 		'before_widget' => '<li id="%1$s" class="widget %2$s">',
 		'after_widget' => '</li>',
@@ -69,6 +69,11 @@ function seed_widgets_init() {
 }
 add_action( 'widgets_init', 'seed_widgets_init' );
 
+function seed_pagination() {
+	bootstrap_pagination();
+
+	paginate_links();
+}
 
 function seed_customize_register( $wp_customize ) {
 	$wp_customize->get_setting( 'blogname' )->transport = 'postMessage';

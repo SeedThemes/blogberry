@@ -1,0 +1,14 @@
+#wpbody #optionsframework .section .heading {
+padding: 10px 0px;
+margin: 0 0 5px;
+border: none;
+font-size: 14px;
+}
+
+
+
+
+#optionsframework #section-fontface_radio input.checkbox, 
+#optionsframework #section-fontface_radio input.of-radio {
+	margin-top: 8px;	
+}

@@ -16,7 +16,7 @@
 	<header><h1 class="title">
 	<?php if (is_tag()) 			{ ?>Tag: <?php single_tag_title(); ?>
 	<?php } elseif (is_category()) 	{ ?><?php single_cat_title(); ?>
-	<?php } elseif (is_day()) 		{ ?>Day: <?php the_time('j F Y'); ?>
+	<?php } elseif (is_day()) 		{ ?>Day: <?php the_time(get_option( 'date_format' )); ?>
 	<?php } elseif (is_month())		{ ?>Month: <?php the_time('F Y'); ?>
 	<?php } elseif (is_year()) 		{ ?>Year: <?php the_time('Y'); ?>
 	<?php } elseif (is_search())	{ ?>Searched for: <?php the_search_query(); ?>
@@ -32,7 +32,7 @@
 
 	<div class="pic">
 	<a href="<?php the_permalink(); ?>" title="Permalink to <?php the_title_attribute(); ?>" rel="bookmark">
-	<?php if(has_post_thumbnail()) { the_post_thumbnail();} else { ?><?php if(get_default_thumbnail() != ''): ?><img src='<?php default_thumbnail(); ?>' /><?php else: ?><img src="<?php bloginfo('template_url'); ?>/img/thumb.jpg" /><?php endif; ?><?php }?>
+	<?php if(has_post_thumbnail()) { the_post_thumbnail();} else { ?><?php if(get_default_thumbnail() != ''): ?><img src='<?php default_thumbnail(); ?>' /><?php else: ?><img src="<?php echo get_template_directory_uri(); ?>/img/thumb.jpg" /><?php endif; ?><?php }?>
 	</a>
 	</div><!--pic-->
 
@@ -53,7 +53,8 @@
 	</article>
 <?php endwhile; ?>
 </div><!--items-->
-<?php bootstrap_pagination();?>
+
+<?php seed_pagination();?>
 
 
 <?php else : ?>

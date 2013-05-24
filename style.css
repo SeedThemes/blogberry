@@ -4,7 +4,7 @@ Theme URI: http://seedthemes.com/blogberry/
 Author: SeedThemes
 Author URI: http://seedthemes.com/
 Description: Minimal theme for blogger.
-Version: 0.7
+Version: 0.8
 License: GNU Lesser General Public License
 License URI: http://www.gnu.org/copyleft/lesser.html
 Tags: one-column, two-columns, custom-background, custom-menu, featured-images, full-width-template, sticky-post, theme-options
@@ -23,6 +23,19 @@ h3{font-size: 20px;}
 body.font-th h1{font-size: 40px;}
 body.font-th h2{font-size: 32px;}
 body.font-th h3{font-size: 24px;}
+
+a{
+	color: #68944a;
+}
+
+a:hover{
+	color: #80ae61;
+}
+
+a:active{
+	color: #527b36;
+}
+
 
 #page{
 	width: 950px;
@@ -200,6 +213,11 @@ body.font-th #nav li{
 	display: none;
 }
 
+#nav [class^="icon-"], 
+#nav [class*=" icon-"] {
+	margin-right: 5px;
+}
+
 
 #s:focus{
 	border-color: #ccc;
@@ -235,13 +253,12 @@ body.font-th #nav li{
 	color: #fff;
 	padding: 14px 30px;
 	border-radius: 3px 3px 0 0;
-	background-color: #999;
+	background-color: #68944a;
 	background-size: cover;
 }
 
 #intro{
 	padding: 30px 45px;
-	font-size: 26px;
 }
 
 .slabtexted .slabtext{display:-moz-inline-box;display:inline-block;white-space:nowrap}
@@ -309,6 +326,13 @@ body.font-th #nav li{
 }
 .item .info p{
 	margin: 5px 0 0;
+}
+
+.sticky{
+	
+}
+.gallery-caption{
+	
 }
 
 
@@ -379,6 +403,12 @@ body.font-th #nav li{
 	margin: 0 0 5px;
 }
 
+
+
+li.comment.bypostauthor{
+	background-color: #ebf2f8;
+	border-color: #cddeed;		
+}
 
 #foot-widgets{
 	border-top: 1px solid #e4e4e4;
@@ -614,6 +644,10 @@ body.font-th #nav li{
 #nav {
 	float: none;
 	width: 100%;
+}
+
+#intro{
+	font-size: 18px;
 }
 
 #search{

@@ -7,7 +7,38 @@
 	add_action( 'wp_enqueue_scripts', 'seed_scripts_method' ); // wp_enqueue_scripts action hook to link only on the front-end
 
 	global $seed;
-	$seed = get_option('blogberry');
+	global $themename;
+	global $fontface_files;
+
+	$themename = get_option( 'stylesheet' );
+	$themename = preg_replace("/\W/", "_", strtolower($themename) );
+
+	$seed = get_option($themename);
+
+	$seed = $seed + array(
+											"logo_checkbox" => 1,
+											"logo_uploader" => "",
+											"logo_border_radio" => "noborder",
+											"intro_background" => "",
+											"intro_image_uploader" => "",
+											"intro_text_editor" => "",
+											"default_thumbnail_uploader" => "",
+											"intro_slabtext_checkbox" => 1,
+											"custom_css_editor" => "",
+											"link_color" => "",
+											"facebook_comment_checkbox" => 0,
+											"facebook_app_id" => "",
+											"fontface_radio" => ""
+										);
+
+	if($seed["fontface_radio"] == "") {
+		if(!is_array($fontface_files) || (count($fontface_files) == 0))
+			$fontface_files = get_fontface_files();
+
+		reset($fontface_files);
+
+		$seed["fontface_radio"] = key($fontface_files);
+	}
 
 	function has_logo() {
 		global $seed;
@@ -30,7 +61,7 @@
 	function has_logo_border() {
 		global $seed;
 
-		return !strcmp($seed['logo_border_radio'], 'border');
+		return !strcmp($seed['logo_border_radio'], 'bordered');
 	}
 
 	function intro_background() {
@@ -55,6 +86,32 @@
 		global $seed;
 
 		return $seed['intro_image_uploader'];
+	}
+
+	function get_intro_text() {
+		global $seed;
+
+		$return = $seed['intro_text_editor'];
+
+		if(trim($return) != '') {
+			$return = str_replace("&nbsp;", " ", $return);
+			$return = str_replace("\r", "", $return);
+
+			while(false !== strpos($return, "  ")) {
+				$return = str_replace("  ", " ", $return);
+			}
+
+			$return = str_replace("\n ", "\n", $return);
+			$return = str_replace(" \n", "\n", $return);
+
+			while(strpos($return, "\n\n")) {
+				$return = str_replace("\n\n", "\n", $return);
+			}
+		} else {
+			$return = '<a href="'.home_url().'/wp-admin/themes.php?page=options-framework" class="edit-default-intro">INTRO AREA, INTRODUCE YOURSELF HERE.<br>YOU CAN CHANGE TEXT, BACKGROUND COLOR AND BACKGROUND IMAGE<br>CLICK TO EDIT THIS TEXT.</a>';
+		}
+
+		return $return;
 	}
 
 	function intro_text() {
@@ -87,37 +144,11 @@
 				$return_with_slabtext .= '<span class="slabtext">'.$_line.'</span>';
 			}
 		} else {
-			$return_with_slabtext = '<a href="'.get_bloginfo("url").'/wp-admin/themes.php?page=options-framework" class="edit-this-intro" /><span class="slabtext">INTRO AREA, INTRODUCE YOURSELF HERE. </span><span class="slabtext"> YOU CAN CHANGE TEXT, TEXT COLOR, BACKGROUND COLOR OR BACKGROUND IMAGE
+			$return_with_slabtext = '<a href="'.home_url().'/wp-admin/themes.php?page=options-framework" class="edit-this-intro" /><span class="slabtext">INTRO AREA, INTRODUCE YOURSELF HERE. </span><span class="slabtext"> YOU CAN CHANGE TEXT, BACKGROUND COLOR AND BACKGROUND IMAGE
 </span><span class="slabtext">CLICK TO EDIT THIS TEXT.</span></a>';
 		}
 
 		echo $return_with_slabtext;
-	}
-
-	function get_intro_text() {
-		global $seed;
-
-		$return = $seed['intro_text_editor'];
-
-		if(trim($return) != '') {
-			$return = str_replace("&nbsp;", " ", $return);
-			$return = str_replace("\r", "", $return);
-
-			while(false !== strpos($return, "  ")) {
-				$return = str_replace("  ", " ", $return);
-			}
-
-			$return = str_replace("\n ", "\n", $return);
-			$return = str_replace(" \n", "\n", $return);
-
-			while(strpos($return, "\n\n")) {
-				$return = str_replace("\n\n", "\n", $return);
-			}
-		} else {
-			$return = '<a href="'.get_bloginfo("url").'/wp-admin/themes.php?page=options-framework" class="edit-default-intro" />';
-		}
-
-		return $return;
 	}
 
 	function default_thumbnail() {
@@ -227,29 +258,29 @@
 
 			$root_path = rtrim(realpath(dirname(__FILE__)."/../../../../"), "/\\");
 
-			if(strpos($img, get_bloginfo('url')) !== false) {
-				$img = $root_path."/".ltrim(str_replace(get_bloginfo('url'), '', $img), '/');
+			if(strpos($img, home_url() ) !== false) {
+				$img = $root_path."/".ltrim(str_replace(home_url() , '', $img), '/');
 			}
 
 			if($img != '') {
 				if(has_logo_border()) {
 					$image = vt_resize('', $img, 150, 150, true);
 
-					$image['url'] = rtrim(get_bloginfo('url'), "/")."/".ltrim(str_replace($root_path, '', $image['url']), "/");
+					$image['url'] = rtrim(home_url(), "/")."/".ltrim(str_replace($root_path, '', $image['url']), "/");
 
 					$logo = '<img src="'.$image['url'].'" width="'.$image['width'].'" height="'.$image['height'].'" />';
 
 				} else {
 					$image = vt_resize('', $img, 150, 1000, false);
 
-					$image['url'] = rtrim(get_bloginfo('url'), "/")."/".ltrim(str_replace($root_path, '', $image['url']), "/");
+					$image['url'] = rtrim(home_url(), "/")."/".ltrim(str_replace($root_path, '', $image['url']), "/");
 
 					$logo = '<img src="'.$image['url'].'" width="'.$image['width'].'" height="'.$image['height'].'" class="noborder" />';
 				}
 
 			}
 			else {
-				$logo = '<img src="'.get_bloginfo('stylesheet_directory').'/seed-core/img/default-logo.png" /><a href="'.get_bloginfo("url").'/wp-admin/themes.php?page=options-framework" class="edit-this-logo">Edit this logo</a>';	
+				$logo = '<img src="'.get_stylesheet_directory_uri().'/seed-core/img/default-logo.png" /><a href="'.home_url().'/wp-admin/themes.php?page=options-framework" class="edit-this-logo">Edit this logo</a>';	
 			}
 		}
 
@@ -282,7 +313,7 @@
 		}
 
 		if(trim($image) == "")
-			$image = get_bloginfo("stylesheet_directory")."/img/seed-core/img/default-logo.png";
+			$image = get_stylesheet_directory_uri()."/img/seed-core/img/default-logo.png";
 
 		$path = substr($image, 0, strrpos($image, "/"));
 		$filename = substr($image, strrpos($image, "/") + 1);
@@ -446,7 +477,7 @@
 	}
 
 	function get_fontface_files() {
-		$fontface_files;
+		$fontface_files = array();
 
 		$all_fontface_files = array();
 
@@ -482,7 +513,7 @@
 
 		return $fontface_files;
 	}
-	
+
 	// Add specific CSS class by filter
 	add_filter('body_class','add_font_class');
 
@@ -497,3 +528,10 @@
 
 		return $classes;	
 	}
+
+	function seed_admin_theme_style() {
+	    wp_enqueue_style('seed-admin-theme', get_template_directory_uri().'/seed-custom/css/admin.css');
+	}
+
+	add_action('admin_enqueue_scripts', 'seed_admin_theme_style');
+	add_action('login_enqueue_scripts', 'seed_admin_theme_style');

@@ -4,8 +4,12 @@
  * By default it uses the theme name, in lowercase and without spaces, but this can be changed if needed.
  * If the identifier changes, it'll appear as if the options have been reset.
  */
+ 
+ 	global $themename;
+	global $fontface_files;
 
 function optionsframework_option_name() {
+ 	global $themename;
 
 	// This gets the theme name from the stylesheet
 	$themename = get_option( 'stylesheet' );
@@ -28,8 +32,8 @@ function optionsframework_option_name() {
 function optionsframework_options() {
 
 	$logo_border_array = array(
-		'border' => __('Bordered & shadowed', 'seed_options_theme'),
-		'no-border' => __('No border, just image', 'seed_options_theme')
+		'bordered' => __('Bordered & shadowed', 'seed_options_theme'),
+		'noborder' => __('No border, just image', 'seed_options_theme')
 	);
 
 	$editor_settings = array(
@@ -38,17 +42,22 @@ function optionsframework_options() {
 		'tinymce' => array( 'plugins' => 'wordpress' )
 	);
 
-	$fontface_files = get_fontface_files();
+	global $fontface_files;
+
+	if(!is_array($fontface_files) || (count($fontface_files) == 0))
+		$fontface_files = get_fontface_files();
+
+	reset($fontface_files);
 
 	$fontface_array = array();
 
 	foreach($fontface_files as $fontface_name => $_fontface_css) {
 		if(strtolower(substr($fontface_name, -3)) == '-th') {
-			$fontface_array[$fontface_name] = __(substr($fontface_name, 0, strlen($fontface_name) - 3).' AcBbCc 123 กขคงจฉ');
+			$fontface_array[$fontface_name] = substr($fontface_name, 0, strlen($fontface_name) - 3).__(' AcBbCc 123 กขคงจฉ');
 		} elseif(strtolower(substr($fontface_name, -9)) == '-th-large') {
-			$fontface_array[$fontface_name] = __(substr($fontface_name, 0, strlen($fontface_name) - 9).' AcBbCc 123 กขคงจฉ');
+			$fontface_array[$fontface_name] = substr($fontface_name, 0, strlen($fontface_name) - 9).__(' AcBbCc 123 กขคงจฉ');
 		} else {
-			$fontface_array[$fontface_name] = __($fontface_name.' AaBbCc 12345');
+			$fontface_array[$fontface_name] = $fontface_name.__(' AaBbCc 12345');
 		}
 	}
 
@@ -62,8 +71,9 @@ function optionsframework_options() {
 
 	$options[] = array(
 		'name' => __('Logo / avatar', 'seed_options_theme'),
-		'desc' => __('I have logo / avatar.', 'seed_options_theme'),
+		'desc' => __('Show logo / avatar.', 'seed_options_theme'),
 		'id' => 'logo_checkbox',
+		'std' => '1',
 		'type' => 'checkbox');
 
 	$options[] = array(
@@ -75,16 +85,16 @@ function optionsframework_options() {
 
 	$options[] = array(
 		'name' => __('Logo border', 'seed_options_theme'),
-		'desc' => __('Border type', 'seed_options_theme'),
+		'desc' => __('', 'seed_options_theme'),
 		'id' => 'logo_border_radio',
-		'std' => 'border',
+		'std' => 'noborder',
 		'type' => 'radio',
 		'class' => 'hidden',
 		'options' => $logo_border_array);
 
 	$options[] = array(
 		'name' =>  __('Intro background', 'seed_options_theme'),
-		'desc' => __('Background color.', 'seed_options_theme'),
+		'desc' => __('', 'seed_options_theme'),
 		'id' => 'intro_background',
 		'type' => 'color' );
 
@@ -105,6 +115,7 @@ function optionsframework_options() {
 	$options[] = array(
 		'name' => __('Resize & justify text', 'seed_options_theme'),
 		'desc' => __('Resize & justify a text with <a target="_blank" href="http://github.com/freqDec/slabText/">Slabtext</a>.', 'seed_options_theme'),
+		'std' => '1',
 		'id' => 'intro_slabtext_checkbox',
 		'type' => 'checkbox');
 		
@@ -120,7 +131,7 @@ function optionsframework_options() {
 
 	$options[] = array(
 		'name' =>  __('Link color', 'seed_options_theme'),
-		'desc' => __('Change the link color.', 'seed_options_theme'),
+		'desc' => __('', 'seed_options_theme'),
 		'id' => 'link_color',
 		'type' => 'color' );
 
@@ -155,10 +166,13 @@ function optionsframework_options() {
 		'name' => __('Font', 'seed_options_theme'),
 		'type' => 'heading');
 
+	reset($fontface_files);
+
 	$options[] = array(
 		'name' => __('Font', 'seed_options_theme'),
 		'id' => "fontface_radio",
 		'type' => "radio",
+		'std' => key($fontface_files),
 		'options' => $fontface_array
 	);
 
@@ -173,7 +187,13 @@ function optionsframework_options() {
 add_action('optionsframework_custom_scripts', 'optionsframework_custom_scripts');
 
 function optionsframework_custom_scripts() {
-	$fontface_files = get_fontface_files();
+	global $themename;
+	global $fontface_files;
+
+	if(!is_array($fontface_files) || (count($fontface_files) == 0))
+		$fontface_files = get_fontface_files();
+
+	reset($fontface_files);
 ?>
 <style type="text/css">
 <?php foreach($fontface_files as $fontface_css) { ?>
@@ -200,7 +220,7 @@ jQuery(document).ready(function() {
 	}
 
 	<?php foreach($fontface_files as $fontface_name => $fontface_css) { ?>
-	jQuery('label[for="blogberry-fontface_radio-<?php echo $fontface_name; ?>"]').css('font-family', '<?php echo $fontface_name; ?>').css('font-weight', 'normal').css('font-size', '24px').css('line-height', '1.3em').css('white-space','nowrap');
+	jQuery('label[for="<?php echo $themename; ?>-fontface_radio-<?php echo $fontface_name; ?>"]').css('font-family', '<?php echo $fontface_name; ?>').css('font-weight', 'normal').css('font-size', '24px').css('line-height', '1.3em').css('white-space','nowrap');
 	<?php } ?>
 });
 </script>

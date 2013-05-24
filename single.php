@@ -23,8 +23,6 @@
 </article>
 
 
-
-
 <?php seed_socials(); ?>
 
 <?php seed_comment(); ?>
