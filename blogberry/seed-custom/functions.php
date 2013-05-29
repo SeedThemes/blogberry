@@ -6,6 +6,13 @@
 
 	add_action( 'wp_enqueue_scripts', 'seed_scripts_method' ); // wp_enqueue_scripts action hook to link only on the front-end
 
+	function seed_admin_theme_style() {
+	    wp_enqueue_style('seed-admin-theme', get_template_directory_uri().'/seed-custom/css/admin.css');
+	}
+
+	add_action('admin_enqueue_scripts', 'seed_admin_theme_style');
+	add_action('login_enqueue_scripts', 'seed_admin_theme_style');
+
 	global $seed;
 	global $themename;
 	global $fontface_files;
@@ -14,6 +21,9 @@
 	$themename = preg_replace("/\W/", "_", strtolower($themename) );
 
 	$seed = get_option($themename);
+
+	if(!is_array($seed))
+		$seed = array();
 
 	$seed = $seed + array(
 											"logo_checkbox" => 1,
@@ -528,10 +538,3 @@
 
 		return $classes;	
 	}
-
-	function seed_admin_theme_style() {
-	    wp_enqueue_style('seed-admin-theme', get_template_directory_uri().'/seed-custom/css/admin.css');
-	}
-
-	add_action('admin_enqueue_scripts', 'seed_admin_theme_style');
-	add_action('login_enqueue_scripts', 'seed_admin_theme_style');
