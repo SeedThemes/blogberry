@@ -1,0 +1,155 @@
+/* Seed for Bootstrap v0.81 by SeedThemes.com */
+a{
+	-webkit-transition: .2s color ease;
+	-moz-transition: .2s color ease;
+	-o-transition: .2s color ease;
+	-ms-transition: .2s color ease;
+	transition: .2s color ease;
+}
+p {margin: 0 0 1.5em;line-height: 1.6;}
+code{white-space: normal;}
+.form-allowed-tags{display: none;}
+a:hover{text-decoration: none;}
+.group {*zoom: 1;}
+.group:before,
+.group:after {display: table;line-height: 0;content: "";}
+.group:after {clear: both;}
+.clear {clear: both;height: 0;}
+.menu-toggle {display: none;}
+.skip-link,
+.screen-reader-text,
+.assistive-text {position: absolute !important;clip: rect(1px, 1px, 1px, 1px);}
+img.centered, .aligncenter, div.aligncenter {display: block;margin-left: auto;margin-right: auto;}
+img.alignright {display: inline;}
+img.alignleft {display: inline;}
+.alignright {float: right;margin-left: 1em;}
+.alignleft {float: left;margin-right: 1em;}
+.wp-caption {background-color: #fff;margin-bottom: 1.5em;padding-top: 5px;text-align: center;box-shadow: 0px 0px 4px #bbb; border-radius: 3px;max-width: 100% !important;
+}
+.wp-caption img {border: 0 none;margin: 0;padding: 0;}
+.wp-caption p.wp-caption-text {font-size: 0.8em;margin: 0;padding:5px;}
+.meta [class^="icon-"]:before, [class*=" icon-"]:before {margin: 0 4px 0 0;}
+.entry td {vertical-align: top;}
+.entry ol {padding-left: 1.6em;text-indent: 0;margin: 0 0 1.5em;}
+.entry ul {padding-left: 1.2em;text-indent: 0;margin: 0 0 1.5em;}
+.entry ol li {margin: 0 0 0.5em;list-style-type: decimal;list-style-position: outside;}
+.entry ul li {margin: 0 0 0.5em;list-style-type: disc;list-style-position: outside;list-style-image: url(../img/bullet.png);}
+.entry li ul, 
+.entry li ol {margin: 0.5em 0 0 1em;}
+.entry img{max-width: 100%;height: auto;}
+.entry iframe{
+	max-width: 100% !important;
+}
+blockquote p {
+margin-bottom: 0;
+font-size: 14px;
+line-height: 1.6;
+}
+.edit-link a{
+	position: fixed;
+	bottom: 5px;
+	left: 5px;
+	display: block;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	border-radius: 30px;
+	background-color: rgba(0, 0, 0, 0.6);
+	color: #fff;
+	text-align: center;
+	border: 2px solid #fff;	
+	font-size: 11px;
+	overflow: hidden;
+	z-index: 999;
+}
+.edit-link a:hover{
+	opacity: 0.8;
+	color: #fff;
+}
+.edit-link a:active{
+	opacity: 0.6;
+}
+.page-links{
+	clear: both;
+}
+/*--COMMENT--*/
+#comments{
+
+}
+#comments h2,
+#comments h3{
+	font-size: 22px;
+}
+
+#comments>ol {
+	margin: 0;
+}
+#comments li.comment,
+#comments li.trackback,
+#comments li.pingback{
+	list-style: none;
+}
+li.comment{
+ padding: 10px;
+ background: #f4f4f4;
+ border: solid 1px #e8e8e8;
+ margin: 10px 0;
+ position: relative;
+}
+li.comment li.comment{
+	background-color: #f8f8f8;
+}
+.comment-body a.comment-reply-link{
+ position: absolute;
+ font-size: 11px;
+ top: 10px;
+ right: 10px;
+ color: #aaa;
+}
+.comment-body img.avatar{
+	float: left;
+	margin: 0 10px 0 0;
+}
+.comment-body p{
+	margin: 10px 0 0;
+}
+.comment-body blockquote p{
+	font-size: 15px;
+}
+.comment-author.vcard {
+	line-height: 1.1;
+}
+
+.commentmetadata a{
+ margin: 0;
+ font-size: 11px;
+ color: #999;
+}
+
+#commentform p.comment-notes{
+	font-size: 12px;
+	margin: 0 0 12px;
+}
+
+#commentform p{
+	margin: 10px 0;
+	position: relative;
+}
+.comment-form-author label,
+.comment-form-email label,
+.comment-form-url label,
+.comment-form-comment label{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#commentform input[type="text"],
+#commentform textarea{
+	margin-left: 80px;
+	border-radius: 0;
+	width: 500px;
+	padding: 4px;
+}
+#submit{
+	margin-left: 80px;
+}

@@ -1,0 +1,705 @@
+/*
+Theme Name: Blogberry
+Theme URI: http://seedthemes.com/blogberry/
+Author: SeedThemes
+Author URI: http://seedthemes.com/
+Description: Minimal theme for blogger.
+Version: 0.9
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: one-column, two-columns, custom-background, custom-menu, featured-images, sticky-post, theme-options
+Text Domain: blogberry
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+
+body{
+	background-color: #f0f0f0;
+}
+
+h1{font-size: 28px;}
+h2{font-size: 24px;}
+h3{font-size: 20px;}
+
+body.font-th h1{font-size: 40px;}
+body.font-th h2{font-size: 32px;}
+body.font-th h3{font-size: 24px;}
+
+a{
+	color: #68944a;
+}
+
+a:hover{
+	color: #80ae61;
+}
+
+a:active{
+	color: #527b36;
+}
+
+blockquote{
+	padding: 15px;
+	margin: 0 0 20px;
+	background-color: #f8f8f8;
+	border-left: 3px solid #eaeaea;
+}
+
+/* === Bootstrap === */
+
+.btn, input{
+	border-radius: 3px;
+}
+
+.input-append input{
+	border-radius: 3px 0 0 3px;
+}
+
+.input-append .btn{
+	border-radius: 0 3px 3px 0;
+}
+
+/* === End Bootstrap === */
+
+
+
+
+#page{
+	width: 950px;
+	margin: 20px auto;
+	padding: 0 20px;
+}
+
+#head{
+	width: 180px;
+	position: fixed;	
+}
+#head a{
+	color: #333;
+	-webkit-transition: opacity .2s ease-in-out;
+	-moz-transition: opacity .2s ease-in-out;
+	-o-transition: opacity .2s ease-in-out;
+	-ms-transition: opacity .2s ease-in-out;
+	transition: opacity .2s ease-in-out;
+}
+#head a:hover{
+	opacity: 0.8;
+	
+}
+#head a:active{
+	opacity: 0.6;
+}
+#brand{
+	position: relative;
+}
+#brand h2,
+#brand h3{
+	padding-left: 10px;
+}
+#brand .logo{
+	width: 150px;
+	height: auto;
+	margin: 15px 0 10px;
+	text-align: center;
+}
+#brand .logo.bordered{
+	border: 3px solid #fff;
+	border-radius: 100px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+#brand .logo.bordered img{
+	border-radius: 100px;
+	width: 150px;
+	height: auto;
+}
+#brand .title{
+	font-size: 22px;
+	line-height: 1.3em;
+	margin: 0;
+}
+#brand .edit-this-logo{
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.7);
+	font-size: 11px;
+	padding: 1px 5px;
+	border-radius: 3px;
+	color: #fff;
+	white-space: nowrap;
+	z-index: 10;
+	display: block;
+	top: 46px;
+	left: 0;
+}
+
+body.font-th #brand .title{
+	font-size: 22px;
+	line-height: 1.2em;
+}
+#brand .desc{
+	margin: 0 0 20px;
+	font: italic 12px/1.5em Thonburi, Tahoma, Loma, Arial, sans-serif;
+	opacity: 0.6;
+}
+@-webkit-keyframes fadeInUp {
+	0% {opacity: 0;-webkit-transform: translateY(10px);}
+	100% {opacity: 1;-webkit-transform: translateY(0);}
+}
+@-moz-keyframes fadeInUp {
+	0% {opacity: 0;-moz-transform: translateY(10px);}
+	100% {opacity: 1;-moz-transform: translateY(0);}
+}
+@-o-keyframes fadeInUp {
+	0% {opacity: 0;-o-transform: translateY(10px);}
+	100% {opacity: 1;-o-transform: translateY(0);}
+}
+@keyframes fadeInUp {
+	0% {opacity: 0;transform: translateY(10px);}
+	100% {opacity: 1;transform: translateY(0);}
+}
+.fadeInUp {
+	-webkit-animation-name: fadeInUp;
+	-moz-animation-name: fadeInUp;
+	-o-animation-name: fadeInUp;
+	animation-name: fadeInUp;
+	-webkit-animation-duration: 1s;
+	   -moz-animation-duration: 1s;
+	     -o-animation-duration: 1s;
+	        animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	   -moz-animation-fill-mode: both;
+	     -o-animation-fill-mode: both;
+	        animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeIn {
+	0% {opacity: 0;}	
+	100% {opacity: 1;}
+}
+
+@-moz-keyframes fadeIn {
+	0% {opacity: 0;}	
+	100% {opacity: 1;}
+}
+
+@-o-keyframes fadeIn {
+	0% {opacity: 0;}	
+	100% {opacity: 1;}
+}
+
+@keyframes fadeIn {
+	0% {opacity: 0;}	
+	100% {opacity: 1;}
+}
+
+.fadeIn {
+	-webkit-animation-name: fadeIn;
+	-moz-animation-name: fadeIn;
+	-o-animation-name: fadeIn;
+	animation-name: fadeIn;
+	-webkit-animation-duration: 2s;
+	   -moz-animation-duration: 2s;
+	     -o-animation-duration: 2s;
+	        animation-duration: 2s;
+	-webkit-animation-fill-mode: both;
+	   -moz-animation-fill-mode: both;
+	     -o-animation-fill-mode: both;
+	        animation-fill-mode: both;
+}
+
+#s {
+	width: 110px;
+	font-size: 12px;
+}
+
+
+
+#nav {
+	font-size: 15px;
+}
+#nav ul{
+	margin: 0 0 15px 10px;
+}
+
+#nav li{
+	list-style: none;
+	margin: 0 0 8px;
+	line-height: 1.3em;
+	display: block;
+	color: rgba(51, 51, 51, 0.8);
+}
+
+#nav li ul{
+	display: none;
+}
+
+body.font-th #nav li{
+	font-size: 18px;
+}
+
+#nav li ul.dropdown-menu{
+	display: none;
+}
+
+#nav [class^="icon-"], 
+#nav [class*=" icon-"] {
+	margin-right: 5px;
+}
+
+
+#s:focus{
+	border-color: #ccc;
+	outline:0;
+	box-shadow: inset 0 1px 1px rgba(0,0,0,0.075), 0 0 8px rgb(255, 255, 255)
+}
+
+#main{
+	float: right;
+	width: 740px;
+}
+
+#content{
+	background-color: #fff;
+	border-radius: 3px;
+	box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+	min-height: 500px;
+}
+
+.edit-this-intro{
+	color: #fff;
+}
+.edit-this-intro:hover{
+	color: rgba(255, 255, 255, 0.8);
+}
+.edit-this-intro:active{
+	color: rgba(255, 255, 255, 0.6);
+}
+
+#intro,
+#content h1.title{
+	margin: 0;
+	color: #fff;
+	padding: 14px 30px;
+	border-radius: 3px 3px 0 0;
+	background-color: #68944a;
+	background-size: cover;
+}
+
+#intro{
+	padding: 30px 45px;
+}
+
+.slabtexted .slabtext{display:-moz-inline-box;display:inline-block;white-space:nowrap}
+.slabtextinactive .slabtext{display:inline;white-space:normal;font-size:1em !important;letter-spacing:inherit !important;word-spacing:inherit !important;*letter-spacing:0 !important;*word-spacing:0 !important;}
+.slabtextdone .slabtext{display:block;line-height:1.7;}
+
+
+
+
+#content h1.title a{
+	color: #fff;
+}
+#content h1.title a:hover{
+	opacity: 0.8;
+}
+#content h1.title a:active{
+	opacity: 0.6;
+}
+.entry{
+	padding: 20px 45px;
+}
+
+.items{
+	padding: 25px 0;
+}
+.item{
+	padding: 15px 45px;
+	position: relative;
+}
+
+.item .featured-post{
+
+}
+.item .pic{
+	float: left;
+	width: 150px;
+}
+.item .pic img{
+	border-radius: 2px;
+	box-shadow: 0px 0px 2px #ccc;
+}
+.item .info{
+	padding-left: 175px;
+}
+.item .info h3{
+	margin: 0;
+	font-size: 22px;
+}
+
+.item .info .meta{
+	font-size: 12px;
+	margin: 5px 0 0;
+	color: #888;
+	padding: 0;
+}
+.meta{
+	color: #999;
+	padding: 15px 45px 0;
+}
+.meta i{
+	margin: 0 12px 0 0;
+}
+.meta [class^="icon-"]:before, [class*=" icon-"]:before {
+	margin: 0 4px 0 0;
+}
+.item .info p{
+	margin: 5px 0 0;
+}
+
+.sticky{
+	
+}
+.gallery-caption{
+	
+}
+
+
+.author{
+	
+}
+
+.author .pic{
+	
+}
+
+.author .info{
+	
+}
+
+.author .author-link{
+	
+}
+
+.social{
+	padding: 2px 45px 20px;
+}
+
+.social .more{
+	float: right;
+}
+
+.social .twitter{
+	
+}
+
+.social .gplus{
+	
+}
+
+.social .facebook{
+	
+}
+
+
+.pagination{
+	padding: 0 45px;
+	margin: 0 0 30px;
+}
+
+#content .fb-comments{
+	padding: 20px 45px 2px;
+	clear: both;
+	display: block;
+}
+
+#content .fb-comments span,
+#content .fb-comments iframe{
+	width: 100% !important;
+}
+
+#comments{
+	padding: 15px 45px;
+}
+
+#sidebar{
+	padding: 0 10px;
+	margin: 0 0 20px;
+}
+
+.widget{
+	list-style: none;
+}
+
+.widget h3{
+	font-size: 18px;
+	margin: 0 0 5px;
+}
+
+
+
+li.comment.bypostauthor{
+	background-color: #ebf2f8;
+	border-color: #cddeed;		
+}
+
+#foot-widgets{
+	border-top: 1px solid #e4e4e4;
+	padding: 0 25px;
+}
+#foot-widget {
+	display: table;
+	width: 100%;
+	margin: 0;
+	color: #888;
+	font-size: 13px;
+}
+#foot-widget>li{
+	display: table-cell;
+	padding: 20px;
+}
+
+
+#foot{
+	font-size: 11px;
+	overflow: hidden;
+	padding: 10px 0;
+	opacity: 0.5;
+}
+#foot a{
+	color: #333;
+}
+#foot .credit{
+	float: right;
+}
+
+#foot .copyright{
+	float: left;
+}
+
+
+
+
+
+
+@media screen and (max-width: 990px) {
+
+#page {margin: 0 auto;padding: 0;width: 740px;}
+#head {
+	width: 100%;
+	padding: 15px 0 0;
+	float: none;
+	position: relative;
+	margin: 0 auto;
+}
+#brand {float: left;margin: 0 0 10px;width: 50%;}
+#brand .logo{
+	float: left;
+	text-align: left;
+	margin: 0;
+	max-width: 150px;
+	width: auto;
+}
+#brand .edit-this-logo{
+	display: none;
+}
+#brand .logo img,
+#brand .logo.bordered img{
+	height: 50px;
+	width: auto;
+	float: left;
+}
+#brand .name{
+	float: left;
+	padding: 3px 0 0 6px;
+}
+#brand .desc {
+	margin: 0 0 10px;
+}
+#search {
+	float: right;
+}
+#nav {
+	float: right;
+	margin: 0 0 0 20px;
+	width: 178px;
+}
+#nav .menu-toggle {
+	display: block;
+	padding: 4px 8px;
+	margin: 10px 0;
+}
+#nav #mainnav{
+	height: 0;
+	opacity: 0;
+	overflow: hidden;
+	-webkit-transition: all .5s ease-in-out;
+	       -moz-transition: all .5s ease-out;
+	            transition: all .5s ease-out;
+}
+#nav #mainnav.show{
+	height: auto;
+	opacity: 1;
+	min-height: 80px;
+	max-height: 400px;
+
+}
+#search{
+	margin: 0;
+}
+#main {float: none;margin: 0 auto;}
+#sidebar{
+	display: none;
+}
+
+}
+
+
+
+@media screen and (max-width: 739px) {
+#page {
+	width: 100%;
+	box-sizing: border-box;
+}
+
+#head{
+	padding: 10px 10px 0;
+	width: auto;
+}
+
+#nav{
+	margin: 0;
+}
+#mainnav{
+	
+}
+#main{
+	width: 100%;
+}
+
+#content{
+	border-radius: 0;
+}
+
+#intro, #content h1.title{
+	border-radius: 0;
+}
+#intro{
+	padding: 10px 20px;
+}
+
+.items{
+	padding: 5px 0 0;
+}
+.item {
+	padding: 15px 20px;
+	border-bottom: 1px solid #ddd;
+}
+
+.item .pic{
+	float: right;
+	width: 90px;
+	margin: 5px 0 10px 10px;
+}
+
+.item .info{
+	padding-left: 0;
+}
+.pagination{
+	margin: 0;
+	padding: 10px 20px 5px;
+	background-color: #f8f8f8;
+}
+#content .fb-comments{
+	padding: 20px 15px 2px;
+}
+#foot-widgets{
+	padding: 0;	
+}
+#foot-widget{
+	display: block;
+
+}
+#foot-widget>li{
+	display: block;
+	border-bottom: 1px dotted #ddd;
+}
+#foot-widget>li:last-child{
+	border-bottom: none;
+}
+.facebook{
+	width: 100%;
+	overflow: hidden;
+}
+.facebook iframe{
+	width: 100% !important;
+}
+.social .more{
+	float: none;
+}
+.meta{
+	padding: 15px;
+}
+.entry{
+	padding: 5px 15px 15px;
+}
+.social{
+	padding: 0 15px;
+}
+.wp-caption {
+	padding-top: 0;
+}
+#comments{
+	padding: 15px;
+}
+#commentform input[type="text"], #commentform textarea{
+	width: 300px;
+}
+
+
+#foot{
+	padding: 10px;
+}
+#foot .credit{
+	float: none;
+}
+
+}
+
+
+@media screen and (max-width: 479px) {
+
+#brand{
+	float: none;
+	width: 100%;
+	overflow: hidden;
+}
+#nav {
+	float: none;
+	width: 100%;
+}
+
+#intro{
+	font-size: 18px;
+}
+
+#search{
+	float: none;
+}
+
+#commentform label{
+	position: relative;
+	display: block;
+}
+
+
+#commentform input[type="text"], #commentform textarea{
+	width: 90%;
+	margin-left: 0;
+}
+
+#submit{
+	margin-left: 0;
+}
+
+
+}
