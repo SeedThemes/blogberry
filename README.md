@@ -32,7 +32,7 @@ Blogberry is a responsive blogging WordPress theme made for serious bloggers.
 Blogberry theme uses Seed Framework which based on various frameworks and technologies such as
 
 * HTML5 & CSS3 
-* Option to choose [Bootstrap](http://twitter.github.io/bootstrap/) or [HTML KickStart](http://www.99lime.com/elements/) or [Foundation](http://foundation.zurb.com/) (but Blogberry theme use only Bootstrap)
+* Option to choose [Bootstrap](http://twitter.github.io/bootstrap/) or [HTML KickStart](http://www.99lime.com/elements/) (but Blogberry theme use only Bootstrap)
 * [Bootstrap Pagination](http://www.lanexa.net/2012/09/add-twitter-bootstrap-pagination-to-your-wordpress-theme/) that replace WordPress's next and previous link.
 * [Bootstrap Dropdown Menu](https://github.com/twittem/wp-bootstrap-navwalker) (but not use in Blogberry theme because we think that good blog should have just few manu.)
 * [FontAwesome](http://fortawesome.github.io/Font-Awesome/) that can use anywhere including menu.
