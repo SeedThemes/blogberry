@@ -23,15 +23,6 @@ function seed_setup() {
 }
 add_action( 'after_setup_theme', 'seed_setup' );
 
-
-function seed_scripts_styles() {
-
-	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' );	
-	wp_enqueue_style( 'seed-style', get_stylesheet_uri() );
-}
-add_action( 'wp_enqueue_scripts', 'seed_scripts_styles' );
-
-
 function seed_wp_title( $title, $sep ) {
 	global $paged, $page;
 	if ( is_feed() ) return $title;

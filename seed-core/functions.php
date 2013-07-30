@@ -379,4 +379,24 @@ function vt_resize( $attach_id = null, $img_url = null, $width, $height, $crop =
 <?php
 	}
 
+	function theme_styles() {
+		if(defined('SEED_KICKSTART') && (SEED_KICKSTART)) {
+			wp_register_style('seed-framework', get_template_directory_uri()."/seed-core/css/kickstart/css/kickstart.css", array(), "", "all");
+			wp_enqueue_style('seed-framework');
+		} else {
+			wp_register_style('seed-framework', get_template_directory_uri()."/seed-core/css/bootstrap/bootstrap.min.css", array(), "", "all");
+			wp_enqueue_style('seed-framework');
+		}
+
+		wp_register_style('seed-font-awesome', get_template_directory_uri()."/seed-core/css/font-awesome.min.css", array("seed-framework"), "", "all");
+		wp_enqueue_style('seed-font-awesome');
+		wp_register_style('seed', get_template_directory_uri()."/seed-core/css/seed.css", array(), "seed-font-awesome", "all");
+		wp_enqueue_style('seed');
+
+		if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' );	
+			wp_enqueue_style( 'seed-style', get_stylesheet_uri() , array('seed'));
+
+	}
+
+	add_action('wp_enqueue_scripts', 'theme_styles');
 ?>

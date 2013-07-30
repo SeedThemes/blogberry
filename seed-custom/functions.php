@@ -350,15 +350,6 @@
 		$head .= '<meta property="og:description" content="'.$descriptions.'" />'."\r\n";
 		$head .= "\r\n";
 
-		if(defined('SEED_KICKSTART') && (SEED_KICKSTART)) {
-			$head .= "<link rel=\"stylesheet\" href=\"".get_template_directory_uri()."/seed-core/css/kickstart/css/kickstart.css\" type=\"text/css\" />\r\n";
-		} else {
-			$head .= "<link rel=\"stylesheet\" href=\"".get_template_directory_uri()."/seed-core/css/bootstrap/bootstrap.min.css\" type=\"text/css\" />\r\n";
-		}
-
-		$head .= "<link rel=\"stylesheet\" href=\"".get_template_directory_uri()."/seed-core/css/font-awesome.min.css\" type=\"text/css\" />\r\n";
-		$head .= "<link rel=\"stylesheet\" href=\"".get_template_directory_uri()."/seed-core/css/seed.css\" type=\"text/css\" />\r\n";
-
 		$head .= '<style type="text/css">'."\r\n";
 
 		if(!has_logo_border()) {
@@ -508,7 +499,7 @@
 	}
 
 	function blogberry_admin_theme_style() {
-	    wp_enqueue_style('seed-admin-theme', get_template_directory_uri().'/seed-custom/css/admin.css');
+		wp_enqueue_style('seed-admin-theme', get_template_directory_uri().'/seed-custom/css/admin.css');
 	}
 
 	add_action('admin_enqueue_scripts', 'blogberry_admin_theme_style');

@@ -4,7 +4,7 @@ Theme URI: http://seedthemes.com/blogberry/
 Author: SeedThemes
 Author URI: http://seedthemes.com/
 Description: Minimal theme for blogger.
-Version: 0.9
+Version: 0.92
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: one-column, two-columns, custom-background, custom-menu, featured-images, sticky-post, theme-options
@@ -23,7 +23,7 @@ h1{font-size: 28px;}
 h2{font-size: 24px;}
 h3{font-size: 20px;}
 
-body.font-th h1{font-size: 40px;}
+body.font-th h1{font-size: 38px;}
 body.font-th h2{font-size: 32px;}
 body.font-th h3{font-size: 24px;}
 
@@ -260,7 +260,7 @@ body.font-th #nav li{
 
 #content{
 	background-color: #fff;
-	border-radius: 3px;
+	border-radius: 5px 5px 3px 3px;
 	box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
 	min-height: 500px;
 }
@@ -279,7 +279,7 @@ body.font-th #nav li{
 #content h1.title{
 	margin: 0;
 	color: #fff;
-	padding: 14px 30px;
+	padding: 14px 30px 8px;
 	border-radius: 3px 3px 0 0;
 	background-color: #68944a;
 	background-size: cover;
@@ -292,9 +292,6 @@ body.font-th #nav li{
 .slabtexted .slabtext{display:-moz-inline-box;display:inline-block;white-space:nowrap}
 .slabtextinactive .slabtext{display:inline;white-space:normal;font-size:1em !important;letter-spacing:inherit !important;word-spacing:inherit !important;*letter-spacing:0 !important;*word-spacing:0 !important;}
 .slabtextdone .slabtext{display:block;line-height:1.7;}
-
-
-
 
 #content h1.title a{
 	color: #fff;
@@ -420,6 +417,20 @@ body.font-th #nav li{
 #comments{
 	padding: 15px 45px;
 }
+
+.tagcloud{
+	overflow: hidden;
+}
+.tagcloud a{
+	float: left;
+	display: block;
+	padding: 2px 6px;
+	color: #888;
+	background-color: #eee;
+	border-radius: 3px;
+	margin: 0 5px 5px 0;
+}
+
 
 #sidebar{
 	padding: 0 10px;
