@@ -4,7 +4,7 @@ Theme URI: http://seedthemes.com/blogberry/
 Author: SeedThemes
 Author URI: http://seedthemes.com/
 Description: Minimal theme for blogger.
-Version: 0.92
+Version: 0.94
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: one-column, two-columns, custom-background, custom-menu, featured-images, sticky-post, theme-options
@@ -346,7 +346,13 @@ body.font-th #nav li{
 .meta i{
 	margin: 0 12px 0 0;
 }
-.meta [class^="icon-"]:before, [class*=" icon-"]:before {
+
+.meta [class^="icon-"], 
+.meta [class*=" icon-"] {
+	font-family: FontAwesome, sans-serif;
+}
+.meta [class^="icon-"]:before, 
+[class*=" icon-"]:before {
 	margin: 0 4px 0 0;
 }
 .item .info p{

@@ -11,7 +11,7 @@
 <title><?php wp_title( '|', true, 'right' ); ?></title>
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <!--[if lt IE 9]>
-<script src="<?php echo get_template_directory_uri(); ?>/seed-core/js/html5.js" type="text/javascript"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/seed-core/js/vendor/html5shiv.js" type="text/javascript"></script>
 <![endif]-->
 <?php wp_enqueue_script("jquery"); ?>
 <?php wp_head(); ?>
@@ -21,7 +21,7 @@
 <body <?php body_class(); ?>><?php seed_fb(seed_option('facebook_app_id')); ?>
 <div id="page" class="group">
 <header id="head" class="group">
-	<hgroup id="brand">
+	<div id="brand">
 		<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
 		<div class="logo fadeInUp <?php blogberry_logo_border_style(); ?>"><?php if(has_logo()): ?><?php blogberry_logo(); ?><?php else: ?><?php endif; ?></div>
 		<div class="name">
@@ -29,7 +29,7 @@
 		<h3 class="desc fadeIn"><?php bloginfo( 'description' ); ?></h3>
 		</div><!--name-->
 		</a>
-	</hgroup>
+	</div>
 	<nav id="nav" role="navigation">
 		<div class="menu-toggle btn btn-large">Menu</div>
 		<div id="mainnav">
