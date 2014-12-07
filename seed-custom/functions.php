@@ -257,26 +257,22 @@
 		$logo = '';
 
 		if(has_logo()) {
-			$img = trim(get_logo());
+			$upload_dir = wp_upload_dir();
+			$img = str_replace($upload_dir['baseurl'], $upload_dir['basedir'], get_logo());
 
-			$root_path = rtrim(realpath(dirname(__FILE__)."/../../../../"), "/\\");
-
-			if(strpos($img, home_url() ) !== false) {
-				$img = $root_path."/".ltrim(str_replace(home_url() , '', $img), '/');
-			}
 
 			if($img != '') {
 				if(has_logo_border()) {
 					$image = vt_resize('', $img, 150, 150, true);
 
-					$image['url'] = rtrim(home_url(), "/")."/".ltrim(str_replace($root_path, '', $image['url']), "/");
+					$image['url'] = str_replace($upload_dir['basedir'], $upload_dir['baseurl'], $image['url']);
 
 					$logo = '<img src="'.$image['url'].'" width="'.$image['width'].'" height="'.$image['height'].'" />';
 
 				} else {
 					$image = vt_resize('', $img, 150, 1000, false);
 
-					$image['url'] = rtrim(home_url(), "/")."/".ltrim(str_replace($root_path, '', $image['url']), "/");
+					$image['url'] = str_replace($upload_dir['basedir'], $upload_dir['baseurl'], $image['url']);
 
 					$logo = '<img src="'.$image['url'].'" width="'.$image['width'].'" height="'.$image['height'].'" class="noborder" />';
 				}
