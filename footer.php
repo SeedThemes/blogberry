@@ -7,10 +7,10 @@
 
 <footer id="foot" role="contentinfo">
 <div class="credit"> 
-	Powered by <a href="http://www.wordpress.org" target="_blank">WordPress</a> and <a href="http://SeedThemes.com" target="_blank">SeedThemes</a>
+	<?php powered_blogberry(); ?>
 </div><!--credit-->
 <div class="copyright">
-	Copyright &copy; <?php echo date("Y"); ?>, <?php bloginfo( 'name' ); ?>, all rights reserved.
+	<?php copyright_blogberry(); ?>
 </div><!--copyright-->	
 </footer>
 </div><!--main-->

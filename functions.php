@@ -71,7 +71,11 @@ function seed_customize_preview_js() {
 }
 add_action( 'customize_preview_init', 'seed_customize_preview_js' );
 
+/* Theme Option  I will Delete it. */
+require_once(rtrim(realpath(dirname(__FILE__)), "/\\")."/customizer/functions.php");
+require_once(rtrim(realpath(dirname(__FILE__)), "/\\")."/customizer/function.php");
 
-require_once(rtrim(realpath(dirname(__FILE__)), "/\\")."/seed-core/functions.php");
-require_once(rtrim(realpath(dirname(__FILE__)), "/\\")."/seed-custom/functions.php");
+/* there's customizer */
+include_once( dirname( __FILE__ ) . '/customizer/kirki.php' );
+include 'customizer.php';
 ?>

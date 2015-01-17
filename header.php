@@ -23,7 +23,7 @@
 <header id="head" class="group">
 	<div id="brand">
 		<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-		<div class="logo fadeInUp <?php blogberry_logo_border_style(); ?>"><?php if(has_logo()): ?><?php blogberry_logo(); ?><?php else: ?><?php endif; ?></div>
+		<div class="logo fadeInUp <?php blogberry_logo_border_style(); ?>"><?php if(get_theme_mod('logo') == true): ?><?php blogberry_logo(); ?><?php else: ?><?php endif; ?></div>
 		<div class="name">
 		<h2 class="title fadeIn"><?php bloginfo( 'name' ); ?></h2>
 		<h3 class="desc fadeIn"><?php bloginfo( 'description' ); ?></h3>
