@@ -1,3 +1,6 @@
+/* @override 
+	http://localhost:8888/wp-content/themes/blogberry/style.css?ver=4.1 */
+
 /*
 Theme Name: Blogberry
 Theme URI: http://seedthemes.com/blogberry/
@@ -13,30 +16,35 @@ Text Domain: blogberry
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
-
+@font-face {
+    font-family: 'thaisans_neueregular';
+    src: url('inc/thaifonts/thaisansneue-regular-webfont.eot');
+    src: url('inc/thaifonts/thaisansneue-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('inc/thaifonts/thaisansneue-regular-webfont.woff2') format('woff2'),
+         url('inc/thaifonts/thaisansneue-regular-webfont.woff') format('woff'),
+         url('inc/thaifonts/thaisansneue-regular-webfont.ttf') format('truetype'),
+         url('inc/thaifonts/thaisansneue-regular-webfont.svg#thaisans_neueregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
 body{
 	background-color: #f0f0f0;
+	line-height: 1.6;
+	color: #333;
+	font-size: 15px;
 }
-
-h1{font-size: 28px;}
-h2{font-size: 24px;}
-h3{font-size: 20px;}
-
-body.font-th h1{font-size: 38px;}
-body.font-th h2{font-size: 32px;}
-body.font-th h3{font-size: 24px;}
 
 a{
 	color: #68944a;
 }
 
 a:hover{
-	color: #80ae61;
+	opacity: 0.9;
 }
 
 a:active{
-	color: #527b36;
+	opacity: 0.7;
 }
 
 blockquote{
@@ -46,27 +54,16 @@ blockquote{
 	border-left: 3px solid #eaeaea;
 }
 
-/* === Bootstrap === */
-
-.btn, input{
-	border-radius: 3px;
+.menu-toggle {
+	display: none;
 }
 
-.input-append input{
-	border-radius: 3px 0 0 3px;
+h1,h2,h3,h4,h5,h6{
+	font-weight: normal;
+	font-family: "Sukhumvit Set","thaisans_neueregular",sans-serif;
 }
-
-.input-append .btn{
-	border-radius: 0 3px 3px 0;
-}
-
-/* === End Bootstrap === */
-
-
-
-
 #page{
-	width: 950px;
+	width: 990px;
 	margin: 20px auto;
 	padding: 0 20px;
 }
@@ -93,43 +90,31 @@ blockquote{
 #brand{
 	position: relative;
 }
-#brand h2,
-#brand h3{
-	padding-left: 10px;
-}
+
 #brand .logo{
-	width: 150px;
+	width: 126px;
 	height: auto;
-	margin: 15px 0 10px;
-	text-align: center;
+	
 }
-#brand .logo.bordered{
-	border: 3px solid #fff;
-	border-radius: 100px;
-	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+#brand .logo img{
+	max-width: 120px;
+	width: auto;
+	margin: 10px 0;
 }
 #brand .logo.bordered img{
 	border-radius: 100px;
-	width: 150px;
 	height: auto;
+	width: auto;
+	border: 3px solid #fff;
+	border-radius: 100px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+	background-color: #fff;
+	box-sizing: content-box;
 }
 #brand .title{
 	font-size: 22px;
 	line-height: 1.3em;
 	margin: 0;
-}
-#brand .edit-this-logo{
-	position: absolute;
-	background-color: rgba(0, 0, 0, 0.7);
-	font-size: 11px;
-	padding: 1px 5px;
-	border-radius: 3px;
-	color: #fff;
-	white-space: nowrap;
-	z-index: 10;
-	display: block;
-	top: 46px;
-	left: 0;
 }
 
 body.font-th #brand .title{
@@ -138,7 +123,7 @@ body.font-th #brand .title{
 }
 #brand .desc{
 	margin: 0 0 20px;
-	font: italic 12px/1.5em Thonburi, Tahoma, Loma, Arial, sans-serif;
+	font: 12px/1.5em Thonburi, Tahoma, Loma, Arial, sans-serif;
 	opacity: 0.6;
 }
 @-webkit-keyframes fadeInUp {
@@ -206,19 +191,33 @@ body.font-th #brand .title{
 	     -o-animation-fill-mode: both;
 	        animation-fill-mode: both;
 }
-
-#s {
-	width: 110px;
-	font-size: 12px;
+#searchform {
+	
+	margin: 20px 0;
 }
-
+#s {
+	width: 124px;
+	font-size: 12px;
+	height: 32px;
+	float: left;
+	border-radius: 3px 0 0 3px;
+	border-right:none;
+}
+#searchform button {
+	height: 32px;
+	width: 36px;
+	display: inline-block;
+	border-radius: 0 3px 3px 0;
+	font-size: 14px;
+	padding-top: 5px;
+}
 
 
 #nav {
 	font-size: 15px;
 }
 #nav ul{
-	margin: 0 0 15px 10px;
+	margin: 0 0 15px;
 }
 
 #nav li{
@@ -265,33 +264,37 @@ body.font-th #nav li{
 	min-height: 500px;
 }
 
-.edit-this-intro{
-	color: #fff;
-}
-.edit-this-intro:hover{
-	color: rgba(255, 255, 255, 0.8);
-}
-.edit-this-intro:active{
-	color: rgba(255, 255, 255, 0.6);
-}
+
 
 #intro,
 #content h1.title{
-	margin: 0;
 	color: #fff;
-	padding: 14px 30px 8px;
+	margin: 0;
+	padding: 14px 30px 12px;
 	border-radius: 3px 3px 0 0;
 	background-color: #68944a;
-	background-size: cover;
 }
-
+h1.title {
+	font-size: 2.1em;
+	line-height: 1.2;
+}
+#intro a{
+	color: #fff;
+}
 #intro{
-	padding: 30px 45px;
+	padding: 25px 45px;
+	font-size: 20px;
 }
-
-.slabtexted .slabtext{display:-moz-inline-box;display:inline-block;white-space:nowrap}
-.slabtextinactive .slabtext{display:inline;white-space:normal;font-size:1em !important;letter-spacing:inherit !important;word-spacing:inherit !important;*letter-spacing:0 !important;*word-spacing:0 !important;}
-.slabtextdone .slabtext{display:block;line-height:1.7;}
+#intro h1,
+#intro h2,
+#intro h3,
+#intro h4,
+#intro h5,
+#intro h6{
+	margin: 15px 0;
+	line-height: 1em;
+	font-weight: normal;
+}
 
 #content h1.title a{
 	color: #fff;
@@ -342,17 +345,13 @@ body.font-th #nav li{
 .meta{
 	color: #999;
 	padding: 15px 45px 0;
+	font-size: 0.9em;
 }
 .meta i{
 	margin: 0 12px 0 0;
 }
 
-.meta [class^="icon-"], 
-.meta [class*=" icon-"] {
-	font-family: FontAwesome, sans-serif;
-}
-.meta [class^="icon-"]:before, 
-[class*=" icon-"]:before {
+.meta i.fa:before{
 	margin: 0 4px 0 0;
 }
 .item .info p{
@@ -421,8 +420,175 @@ body.font-th #nav li{
 }
 
 #comments{
-	padding: 15px 45px;
+	padding: 25px 45px;
 }
+.comments-area {
+	background-color: #fff;
+	border-top: 1px solid #e4e4e4;
+	font-size: 15px;
+}
+
+.comments-area > :last-child {
+	margin-bottom: 0;
+}
+
+.comment-list + .comment-respond {
+	border-top: 1px solid #eaeaea;
+	border-top: 1px solid rgba(51, 51, 51, 0.1);
+}
+
+.comment-list + .comment-respond,
+.comment-navigation + .comment-respond {
+	padding-top: 1.6em;
+}
+
+.comments-title,
+.comment-reply-title {
+	margin: 10px 0;
+}
+
+.comments-title {
+	margin-bottom: 1.3333em;
+}
+
+.comment-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.comment-list article,
+.comment-list .pingback,
+.comment-list .trackback {
+	border-top: 1px solid #eaeaea;
+	border-top: 1px solid rgba(51, 51, 51, 0.1);
+	padding: 1.6em 0;
+}
+
+.comment-list .children {
+	list-style: none;
+	margin: 0;
+}
+
+.comment-list .children > li {
+	padding-left: 0.8em;
+}
+
+.comment-author {
+	color: #707070;
+	color: rgba(51, 51, 51, 0.7);
+
+}
+.comment-meta.commentmetadata {
+	margin-bottom: 14px;
+}
+.comment-meta.commentmetadata a{
+	font-size: 0.8em;
+	color: #888;
+}
+.comment-meta.commentmetadata a.comment-edit-link{
+
+}
+.comment-body {
+	margin-bottom: 20px;
+}
+.comment-body p {
+	margin-bottom: 15px;
+}
+
+.comment-author a:hover {
+	border-bottom: 1px solid #707070;
+	border-bottom: 1px solid rgba(51, 51, 51, 0.7);
+}
+
+.comment-author .avatar {
+	float: left;
+	margin-right: 0.8em;
+}
+
+.bypostauthor > article .fn:after {
+	content: "\f304";
+	position: relative;
+	top: 5px;
+	left: 3px;
+}
+
+
+
+
+.comment-list .reply {
+	font-size: 12px;
+}
+
+.comment-list .reply a {
+	border: 1px solid #eaeaea;
+	border: 1px solid rgba(51, 51, 51, 0.1);
+	color: #707070;
+	color: rgba(51, 51, 51, 0.7);
+	display: inline-block;
+	line-height: 1;
+	padding: 0.4167em 0.8333em;
+}
+
+.comment-list .reply a:hover,
+.comment-list .reply a:focus {
+	border-color: #333;
+	color: #333;
+	outline: 0;
+}
+
+.comment-form label {
+	color: #707070;
+	display: block;
+	margin: 0 0 5px;
+}
+
+.comment-form input[type="text"],
+.comment-form input[type="email"],
+.comment-form input[type="url"],
+.comment-form input[type="submit"] {
+	width: 100%;
+}
+
+.comment-notes,
+.comment-awaiting-moderation,
+.logged-in-as,
+.form-allowed-tags {
+	color: #707070;
+	font-size: 0.8em;
+}
+
+.logged-in-as a:hover {
+	border-bottom: 1px solid #333;
+}
+
+.comment-navigation + .no-comments {
+	border-top: 0;
+}
+
+.form-allowed-tags code {
+	font-family: Inconsolata, monospace;
+}
+
+.form-submit {
+	margin-bottom: 0;
+}
+
+.required {
+	color: #c0392b;
+}
+
+.comment-reply-title small {
+
+}
+
+.comment-reply-title small a {
+	float: right;
+	
+}
+
+
+
 
 .tagcloud{
 	overflow: hidden;
@@ -439,8 +605,8 @@ body.font-th #nav li{
 
 
 #sidebar{
-	padding: 0 10px;
 	margin: 0 0 20px;
+	font-size: 0.9em;
 }
 
 .widget{
@@ -455,8 +621,10 @@ body.font-th #nav li{
 
 
 li.comment.bypostauthor{
-	background-color: #ebf2f8;
-	border-color: #cddeed;		
+	background-color: #faf8f2;
+	border-color: #cddeed;	
+	padding: 10px;	
+	margin-bottom: 15px;
 }
 
 #foot-widgets{
@@ -603,6 +771,9 @@ li.comment.bypostauthor{
 #intro{
 	padding: 10px 20px;
 }
+
+
+
 
 .items{
 	padding: 5px 0 0;

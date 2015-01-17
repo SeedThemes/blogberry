@@ -12,7 +12,7 @@
 ********************************************************************/
 
 if ( ! isset( $content_width ) ) $content_width = 650;
-
+define( 'NO_HEADER_TEXT', true );
 function seed_setup() {
 	add_editor_style();
 	add_theme_support( 'automatic-feed-links' );
@@ -20,6 +20,22 @@ function seed_setup() {
 	add_theme_support( 'custom-background', array('default-color' => 'e4e4e4'));
 	add_theme_support( 'post-thumbnails' );
 	set_post_thumbnail_size( 150, 150, TRUE );
+	$defaults = array(
+		'default-image' => get_template_directory_uri() . '/img/default-logo.png',
+		'width'                  => 120,
+		'height'                 => 120,
+		'flex-height'            => true,
+		'flex-width'             => false,
+		'uploads'                => true,
+		'random-default'         => false,
+		'header-text'            => true,
+		'default-text-color'     => '',
+		'wp-head-callback'       => '',
+		'admin-head-callback'    => '',
+		'admin-preview-callback' => '',
+		);
+	add_theme_support( 'custom-header', $defaults );
+	
 }
 add_action( 'after_setup_theme', 'seed_setup' );
 
@@ -37,16 +53,6 @@ add_filter( 'wp_title', 'seed_wp_title', 10, 2 );
 
 function seed_widgets_init() {
 	register_sidebar( array(
-		'name' => __( 'Side Area', 'seed' ),
-		'id' => 'seed-sidebar-main',
-		'description' => __( 'Appears on side, recommend for 160px width banners', 'seed' ),
-		'before_widget' => '<li id="%1$s" class="widget %2$s">',
-		'after_widget' => '</li>',
-		'before_title' => '<h3 class="widget-title">',
-		'after_title' => '</h3>',
-	) );
-
-	register_sidebar( array(
 		'name' => __( 'Footer Area', 'seed' ),
 		'id' => 'seed-sidebar-foot',
 		'description' => __( 'Appears below content', 'seed' ),
@@ -54,9 +60,18 @@ function seed_widgets_init() {
 		'after_widget' => '</li>',
 		'before_title' => '<h3 class="widget-title">',
 		'after_title' => '</h3>',
-	) );
-	
-
+		) );
+	register_sidebar( array(
+		'name' => __( 'Side Area', 'seed' ),
+		'id' => 'seed-sidebar-main',
+		'description' => __( 'Appears on side, recommend for 160px width banners', 'seed' ),
+		'before_widget' => '<li id="%1$s" class="widget %2$s">',
+		'after_widget' => '</li>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+		) );
+	unregister_widget('WP_Widget_Search');
+	unregister_widget('WP_Widget_Recent_Comments');
 }
 add_action( 'widgets_init', 'seed_widgets_init' );
 
@@ -66,16 +81,11 @@ function seed_customize_register( $wp_customize ) {
 }
 add_action( 'customize_register', 'seed_customize_register' );
 
-function seed_customize_preview_js() {
-	wp_enqueue_script( 'seed-customizer', get_template_directory_uri() . '/seed-core/js/theme-customizer.js', array( 'customize-preview' ), '20121027', true );
-}
-add_action( 'customize_preview_init', 'seed_customize_preview_js' );
 
-/* Theme Option  I will Delete it. */
-require_once(rtrim(realpath(dirname(__FILE__)), "/\\")."/customizer/functions.php");
-require_once(rtrim(realpath(dirname(__FILE__)), "/\\")."/customizer/function.php");
+/* Seed Functions */
+include_once( dirname( __FILE__ ) . '/inc/seed-functions.php' );
 
-/* there's customizer */
-include_once( dirname( __FILE__ ) . '/customizer/kirki.php' );
-include 'customizer.php';
+/* Customizer */
+include_once( dirname( __FILE__ ) . '/inc/kirki/kirki.php' );
+include ( dirname( __FILE__ ) . '/inc/kirki-config.php' );
 ?>
