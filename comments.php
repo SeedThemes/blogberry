@@ -36,9 +36,9 @@ if ( post_password_required() ) {
 
 			<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // are there comments to navigate through ?>
 				<nav id="comment-nav-above" class="comment-navigation" role="navigation">
-					<h1 class="screen-reader-text"><?php _e( 'Comment navigation', 'seed' ); ?></h1>
-					<div class="nav-previous"><?php previous_comments_link( __( '&larr; Older Comments', 'seed' ) ); ?></div>
-					<div class="nav-next"><?php next_comments_link( __( 'Newer Comments &rarr;', 'seed' ) ); ?></div>
+					<h1 class="screen-reader-text"><?php _e( 'Comment navigation', 'blogberry' ); ?></h1>
+					<div class="nav-previous"><?php previous_comments_link( __( '&larr; Older Comments', 'blogberry' ) ); ?></div>
+					<div class="nav-next"><?php next_comments_link( __( 'Newer Comments &rarr;', 'blogberry' ) ); ?></div>
 				</nav><!-- #comment-nav-above -->
 			<?php endif; // check for comment navigation ?>
 
@@ -54,9 +54,9 @@ if ( post_password_required() ) {
 
 				<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // are there comments to navigate through ?>
 					<nav id="comment-nav-below" class="comment-navigation" role="navigation">
-						<h1 class="screen-reader-text"><?php _e( 'Comment navigation', 'seed' ); ?></h1>
-						<div class="nav-previous"><?php previous_comments_link( __( '&larr; Older Comments', 'seed' ) ); ?></div>
-						<div class="nav-next"><?php next_comments_link( __( 'Newer Comments &rarr;', 'seed' ) ); ?></div>
+						<h1 class="screen-reader-text"><?php _e( 'Comment navigation', 'blogberry' ); ?></h1>
+						<div class="nav-previous"><?php previous_comments_link( __( '&larr; Older Comments', 'blogberry' ) ); ?></div>
+						<div class="nav-next"><?php next_comments_link( __( 'Newer Comments &rarr;', 'blogberry' ) ); ?></div>
 					</nav><!-- #comment-nav-below -->
 				<?php endif; // check for comment navigation ?>
 
@@ -66,7 +66,7 @@ if ( post_password_required() ) {
 		// If comments are closed and there are comments, let's leave a little note, shall we?
 			if ( ! comments_open() && '0' != get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) :
 				?>
-			<p class="no-comments"><?php _e( 'Comments are closed.', 'seed' ); ?></p>
+			<p class="no-comments"><?php _e( 'Comments are closed.', 'blogberry' ); ?></p>
 		<?php endif; ?>
 
 		<?php comment_form(); ?>
