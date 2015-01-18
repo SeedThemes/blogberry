@@ -179,7 +179,7 @@ function blogberry_setting( $controls ) {
 	$controls[] = array(
 		'type'     => 'text',
 		'setting'  => 'copyright',
-		'label'    => __( 'Copyright', 'translation_domain' ),
+		'label'    => __( 'Copyright', 'blogberry' ),
 		'section'  => 'footer',
 		'default'  => '&copy; '. date("Y") . ' ' . get_bloginfo('name') . ', all rights reserved.',
 		'priority' => 1,

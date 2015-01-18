@@ -20,7 +20,7 @@
 
 <body <?php body_class(); ?>>
 	<div id="page" class="group">
-		<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'seed' ); ?></a>
+		<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'blogberry' ); ?></a>
 		<header id="head" class="group">
 
 
@@ -39,12 +39,12 @@
 				</a>
 			</div>
 			<nav id="nav" role="navigation">
-				<button class="menu-toggle"><i class="icon-menu"></i> <?php _e( 'Menu', 'seed' ); ?></button>
+				<button class="menu-toggle"><i class="icon-menu"></i> <?php _e( 'Menu', 'blogberry' ); ?></button>
 				<div id="mainnav">
 					<?php wp_nav_menu( array( 'theme_location' => 'main', 'menu_class' => 'main' ) ); ?>
 					<div id="search" class="form-search">
 						<form role="search" method="get" id="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>">
-							<label class="screen-reader-text" for="s">Search for:</label>
+							<label class="screen-reader-text" for="s"><?php printf( __('Search for:','blogberry')); ?> ?></label>
 							<input type="text" name="s" id="s" class="search-query" placeholder="Search"/>
 							<button type="submit" id="searchsubmit" class="btn"><i class="fa fa-search"></i></button> 
 						</form>

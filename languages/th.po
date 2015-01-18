@@ -1,0 +1,435 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Blogberry v1.9.8\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2015-01-18 07:08:25+0000\n"
+"Last-Translator: gapgag55 <zxc5546@hotmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: CSL v1.x\n"
+"X-Poedit-Language: Thai\n"
+"X-Poedit-Country: THAILAND\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#: comments.php:32
+#@ seed
+msgctxt "comments title"
+msgid "Comment"
+msgid_plural "Comments"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:39
+#: comments.php:57
+#@ blogberry
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:40
+#: comments.php:58
+#@ blogberry
+msgid "&larr; Older Comments"
+msgstr "&larr; ความคิดเห็นที่เก่ากว่า"
+
+#: comments.php:41
+#: comments.php:59
+#@ blogberry
+msgid "Newer Comments &rarr;"
+msgstr "ความคิดเห็นที่ใหม่กว่า  &rarr;"
+
+#: comments.php:69
+#@ blogberry
+msgid "Comments are closed."
+msgstr "ความคิดเห็นไม่ได้เปิดใช้งาน"
+
+#: footer.php:10
+#@ blogberry
+msgid "Powered by WordPress"
+msgstr "สร้างจาก WordPress"
+
+#: footer.php:12
+#@ blogberry
+msgid "SeedThemes"
+msgstr ""
+
+#: functions.php:21
+#@ blogberry
+msgid "Main Navigation"
+msgstr "เมนูหลักก"
+
+#: functions.php:50
+#, php-format
+#@ blogberry
+msgid "Page %s"
+msgstr "หน้า %s"
+
+#: functions.php:58
+#@ seed
+msgid "Footer Area"
+msgstr ""
+
+#: functions.php:60
+#@ blogberry
+msgid "Appears below content"
+msgstr "พื้นที่ด้านล่าง"
+
+#: functions.php:67
+#@ blogberry
+msgid "Side Area"
+msgstr "พื้นที่ด้านข้าง"
+
+#: functions.php:69
+#@ blogberry
+msgid "Appears on side, recommend for 160px width banners"
+msgstr "ปรากฏอยู่ด้านข้างแนะนำให้ใช้ Banner ที่กว้าง 160px"
+
+#: header.php:23
+#@ blogberry
+msgid "Skip to content"
+msgstr "ข้ามเนื้อหา"
+
+#: header.php:42
+#@ blogberry
+msgid "Menu"
+msgstr "เมนู"
+
+#: inc/kirki/includes/controls/class-Kirki_Customize_Color_Control.php:37
+#@ kirki
+msgid "Default"
+msgstr ""
+
+#: inc/kirki/includes/controls/class-Kirki_Customize_Color_Control.php:95
+#@ default
+msgid "Hex Value"
+msgstr ""
+
+#: inc/kirki/includes/controls/class-Kirki_Customize_Image_Control.php:31
+#@ kirki
+msgid "No Image"
+msgstr ""
+
+#: inc/kirki/includes/controls/class-Kirki_Customize_Image_Control.php:35
+#@ kirki
+msgid "Upload New"
+msgstr ""
+
+#: inc/kirki/includes/controls/class-Kirki_Customize_Image_Control.php:36
+#@ kirki
+msgid "Uploaded"
+msgstr ""
+
+#: inc/kirki/includes/controls/class-Kirki_Customize_Image_Control.php:118
+#@ kirki
+msgid "Remove Image"
+msgstr ""
+
+#: inc/kirki/includes/controls/class-Kirki_Customize_Image_Control.php:156
+#, php-format
+#@ default
+msgid "The web browser on your device cannot be used to upload files. You may be able to use the <a href=\"%s\">native app for your device</a> instead."
+msgstr ""
+
+#: inc/kirki/includes/controls/class-Kirki_Customize_Image_Control.php:160
+#@ default
+msgid "Drop a file here or <a href=\"#\" class=\"upload\">select a file</a>."
+msgstr ""
+
+#: inc/kirki/includes/controls/class-Kirki_Customize_Image_Control.php:163
+#@ kirki
+msgid "Select File"
+msgstr ""
+
+#: inc/kirki/includes/controls/class-Kirki_Customize_Upload_Control.php:65
+#@ kirki
+msgid "Upload"
+msgstr ""
+
+#: inc/kirki/includes/controls/class-Kirki_Customize_Upload_Control.php:66
+#@ kirki
+msgid "Remove"
+msgstr ""
+
+#: inc/kirki/includes/functions/class-Kirki_Fonts.php:132
+#@ gather
+msgid "All"
+msgstr ""
+
+#: inc/kirki/includes/functions/class-Kirki_Fonts.php:133
+#@ gather
+msgid "Cyrillic"
+msgstr ""
+
+#: inc/kirki/includes/functions/class-Kirki_Fonts.php:134
+#@ gather
+msgid "Cyrillic Extended"
+msgstr ""
+
+#: inc/kirki/includes/functions/class-Kirki_Fonts.php:135
+#@ gather
+msgid "Devanagari"
+msgstr ""
+
+#: inc/kirki/includes/functions/class-Kirki_Fonts.php:136
+#@ gather
+msgid "Greek"
+msgstr ""
+
+#: inc/kirki/includes/functions/class-Kirki_Fonts.php:137
+#@ gather
+msgid "Greek Extended"
+msgstr ""
+
+#: inc/kirki/includes/functions/class-Kirki_Fonts.php:138
+#@ gather
+msgid "Khmer"
+msgstr ""
+
+#: inc/kirki/includes/functions/class-Kirki_Fonts.php:139
+#@ gather
+msgid "Latin"
+msgstr ""
+
+#: inc/kirki/includes/functions/class-Kirki_Fonts.php:140
+#@ gather
+msgid "Latin Extended"
+msgstr ""
+
+#: inc/kirki/includes/functions/class-Kirki_Fonts.php:141
+#@ gather
+msgid "Vietnamese"
+msgstr ""
+
+#: inc/kirki/includes/functions/class-Kirki_Fonts.php:208
+#@ gather
+msgctxt "font style"
+msgid "Serif"
+msgstr ""
+
+#: inc/kirki/includes/functions/class-Kirki_Fonts.php:212
+#@ gather
+msgctxt "font style"
+msgid "Sans Serif"
+msgstr ""
+
+#: inc/kirki/includes/functions/class-Kirki_Fonts.php:216
+#@ gather
+msgctxt "font style"
+msgid "Monospaced"
+msgstr ""
+
+#: inc/kirki/includes/functions/controls-init.php:95
+#@ kirki
+msgid "Background Color"
+msgstr ""
+
+#: inc/kirki/includes/functions/controls-init.php:107
+#@ kirki
+msgid "Background Image"
+msgstr ""
+
+#: inc/kirki/includes/functions/controls-init.php:119
+#@ kirki
+msgid "No Repeat"
+msgstr ""
+
+#: inc/kirki/includes/functions/controls-init.php:120
+#@ kirki
+msgid "Repeat All"
+msgstr ""
+
+#: inc/kirki/includes/functions/controls-init.php:121
+#@ kirki
+msgid "Repeat Horizontally"
+msgstr ""
+
+#: inc/kirki/includes/functions/controls-init.php:122
+#@ kirki
+msgid "Repeat Vertically"
+msgstr ""
+
+#: inc/kirki/includes/functions/controls-init.php:123
+#: inc/kirki/includes/functions/controls-init.php:138
+#: inc/kirki/includes/functions/controls-init.php:156
+#@ kirki
+msgid "Inherit"
+msgstr ""
+
+#: inc/kirki/includes/functions/controls-init.php:126
+#@ kirki
+msgid "Background Repeat"
+msgstr ""
+
+#: inc/kirki/includes/functions/controls-init.php:139
+#@ kirki
+msgid "Cover"
+msgstr ""
+
+#: inc/kirki/includes/functions/controls-init.php:140
+#@ kirki
+msgid "Contain"
+msgstr ""
+
+#: inc/kirki/includes/functions/controls-init.php:144
+#@ kirki
+msgid "Background Size"
+msgstr ""
+
+#: inc/kirki/includes/functions/controls-init.php:157
+#@ kirki
+msgid "Fixed"
+msgstr ""
+
+#: inc/kirki/includes/functions/controls-init.php:158
+#@ kirki
+msgid "Scroll"
+msgstr ""
+
+#: inc/kirki/includes/functions/controls-init.php:162
+#@ kirki
+msgid "Background Attachment"
+msgstr ""
+
+#: inc/kirki/includes/functions/controls-init.php:174
+#@ kirki
+msgid "Left Top"
+msgstr ""
+
+#: inc/kirki/includes/functions/controls-init.php:175
+#@ kirki
+msgid "Left Center"
+msgstr ""
+
+#: inc/kirki/includes/functions/controls-init.php:176
+#@ kirki
+msgid "Left Bottom"
+msgstr ""
+
+#: inc/kirki/includes/functions/controls-init.php:177
+#@ kirki
+msgid "Right Top"
+msgstr ""
+
+#: inc/kirki/includes/functions/controls-init.php:178
+#@ kirki
+msgid "Right Center"
+msgstr ""
+
+#: inc/kirki/includes/functions/controls-init.php:179
+#@ kirki
+msgid "Right Bottom"
+msgstr ""
+
+#: inc/kirki/includes/functions/controls-init.php:180
+#@ kirki
+msgid "Center Top"
+msgstr ""
+
+#: inc/kirki/includes/functions/controls-init.php:181
+#@ kirki
+msgid "Center Center"
+msgstr ""
+
+#: inc/kirki/includes/functions/controls-init.php:182
+#@ kirki
+msgid "Center Bottom"
+msgstr ""
+
+#: inc/kirki/includes/functions/controls-init.php:185
+#@ kirki
+msgid "Background Position"
+msgstr ""
+
+#: inc/kirki/includes/functions/controls-init.php:203
+#@ kirki
+msgid "Background Opacity"
+msgstr ""
+
+#: inc/kirki-config.php:58
+#@ blogberry
+msgid "Introduction Text"
+msgstr "ข้อความส่วนหัว"
+
+#: inc/kirki-config.php:62
+#@ blogberry
+msgid "Featured Image"
+msgstr "รูปพิเศษ"
+
+#: inc/kirki-config.php:66
+#@ blogberry
+msgid "Footer Text"
+msgstr "ข้อความส่วนท้าย"
+
+#: inc/kirki-config.php:128
+#@ blogberry
+msgid "Image Border"
+msgstr "เส้นขอบรูปภาพ"
+
+#: inc/kirki-config.php:133
+#@ blogberry
+msgid "Add Border"
+msgstr "เพิ่มเส้นขอบ"
+
+#: inc/kirki-config.php:141
+#@ blogberry
+msgid "Text on Home Page"
+msgstr "ข้อความส่วนหัว"
+
+#: inc/kirki-config.php:150
+#@ blogberry
+msgid "Default (Blank) Featured Image"
+msgstr "รูปพิเศษเริ่มต้น"
+
+#: inc/kirki-config.php:159
+#@ blogberry
+msgid "Main Color (Links &amp; Intro Background) "
+msgstr "สีพื้นหลังข้อความและสีลิ้ง"
+
+#: inc/kirki-config.php:169
+#@ blogberry
+msgid "Side Text Color"
+msgstr "สีข้อความด้านข้าง"
+
+#: inc/kirki-config.php:174
+#@ blogberry
+msgid "Black"
+msgstr "สีดำ"
+
+#: inc/kirki-config.php:175
+#@ blogberry
+msgid "White"
+msgstr "สีขาว"
+
+#: inc/kirki-config.php:182
+#@ blogberry
+msgid "Copyright"
+msgstr "ข้อความลิขสิทธิ์"
+
+#: inc/seed-functions.php:290
+#@ seed
+msgid "https://twitter.com/share"
+msgstr ""
+
+#: 404.php:6
+#@ blogberry
+msgid "This is somewhat embarrassing, isn&rsquo;t it?"
+msgstr "ค้นหาไม่เจอใช่หรือไม่?"
+
+#: 404.php:9
+#@ blogberry
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr "ลองกรอกข้อมูลเพื่อค้นหาอีกครั้ง"
+
+#: header.php:47
+#@ blogberry
+msgid "Search for:"
+msgstr ""
+

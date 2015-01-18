@@ -13,10 +13,12 @@
 
 if ( ! isset( $content_width ) ) $content_width = 650;
 define( 'NO_HEADER_TEXT', true );
+load_theme_textdomain( 'blogberry', get_template_directory() .'/languages' );
+
 function seed_setup() {
 	add_editor_style();
 	add_theme_support( 'automatic-feed-links' );
-	register_nav_menus( array('main' => __( 'Main Navigation', 'seed' )));
+	register_nav_menus( array('main' => __( 'Main Navigation', 'blogberry' )));
 	add_theme_support( 'custom-background', array('default-color' => 'e4e4e4'));
 	add_theme_support( 'post-thumbnails' );
 	set_post_thumbnail_size( 150, 150, TRUE );
@@ -45,7 +47,7 @@ function seed_wp_title( $title, $sep ) {
 	$title .= get_bloginfo( 'name' );
 	$site_description = get_bloginfo( 'description', 'display' );	
 	if ( $site_description && ( is_home() || is_front_page() ) ) $title = "$title $sep $site_description";
-	if ( $paged >= 2 || $page >= 2 ) $title = "$title $sep " . sprintf( __( 'Page %s', 'seed' ), max( $paged, $page ) );
+	if ( $paged >= 2 || $page >= 2 ) $title = "$title $sep " . sprintf( __( 'Page %s', 'blogberry' ), max( $paged, $page ) );
 	return $title;
 }
 add_filter( 'wp_title', 'seed_wp_title', 10, 2 );
@@ -55,16 +57,16 @@ function seed_widgets_init() {
 	register_sidebar( array(
 		'name' => __( 'Footer Area', 'seed' ),
 		'id' => 'seed-sidebar-foot',
-		'description' => __( 'Appears below content', 'seed' ),
+		'description' => __( 'Appears below content', 'blogberry' ),
 		'before_widget' => '<li id="%1$s" class="widget %2$s">',
 		'after_widget' => '</li>',
 		'before_title' => '<h3 class="widget-title">',
 		'after_title' => '</h3>',
 		) );
 	register_sidebar( array(
-		'name' => __( 'Side Area', 'seed' ),
+		'name' => __( 'Side Area', 'blogberry' ),
 		'id' => 'seed-sidebar-main',
-		'description' => __( 'Appears on side, recommend for 160px width banners', 'seed' ),
+		'description' => __( 'Appears on side, recommend for 160px width banners', 'blogberry' ),
 		'before_widget' => '<li id="%1$s" class="widget %2$s">',
 		'after_widget' => '</li>',
 		'before_title' => '<h3 class="widget-title">',
