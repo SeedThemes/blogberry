@@ -1,429 +1,444 @@
+# Loco Gettext template
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Blogberry v1.9.8\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-01-18 14:39+0700\n"
-"PO-Revision-Date: 2015-01-18 17:55+0700\n"
+"POT-Revision-Date: Sun Jan 18 2015 21:54:52 GMT+0700 (ICT)\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: gapgag55 <zxc5546@hotmail.com>\n"
 "Language-Team: \n"
-"Language: th\n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Poedit 1.7.3\n"
 "X-Poedit-SourceCharset: utf-8\n"
-"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
+"X-Generator: Loco - https://localise.biz/\n"
+"X-Poedit-KeywordsList: _:1;gettext:1;dgettext:2;ngettext:1,2;dngettext:2,3;"
+"__:1;_e:1;_c:1;_n:1,2;_n_noop:1,2;_nc:1,2;__ngettext:1,2;__ngettext_noop:1,2;"
+"_x:1,2c;_ex:1,2c;_nx:1,2,4c;_nx_noop:1,2,3c;_n_js:1,2;_nx_js:1,2,3c;"
+"esc_attr__:1;esc_html__:1;esc_attr_e:1;esc_html_e:1;esc_attr_x:1,2c;"
+"esc_html_x:1,2c;comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
 "X-Poedit-Basepath: ../\n"
 "X-Textdomain-Support: yes\n"
-"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-0: ."
 
 # @ blogberry
-#: 404.php:6
+#: ../404.php:6
 msgid "This is somewhat embarrassing, isn&rsquo;t it?"
 msgstr ""
 
 # @ blogberry
-#: 404.php:9
-msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+#: ../404.php:9
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
 msgstr ""
 
-# @ seed
-#: comments.php:32
-msgctxt "comments title"
+#: ../comments.php:32
 msgid "Comment"
 msgid_plural "Comments"
 msgstr[0] ""
 msgstr[1] ""
 
 # @ blogberry
-#: comments.php:39 comments.php:57
+#: ../comments.php:39 ../comments.php:57
 msgid "Comment navigation"
 msgstr ""
 
 # @ blogberry
-#: comments.php:40 comments.php:58
+#: ../comments.php:40 ../comments.php:58
 msgid "&larr; Older Comments"
 msgstr ""
 
 # @ blogberry
-#: comments.php:41 comments.php:59
+#: ../comments.php:41 ../comments.php:59
 msgid "Newer Comments &rarr;"
 msgstr ""
 
 # @ blogberry
-#: comments.php:69
+#: ../comments.php:69
 msgid "Comments are closed."
 msgstr ""
 
 # @ blogberry
-#: footer.php:10
+#: ../footer.php:10
 msgid "Powered by WordPress"
 msgstr ""
 
 # @ blogberry
-#: footer.php:12
+#: ../footer.php:12
 msgid "SeedThemes"
 msgstr ""
 
 # @ blogberry
-#: functions.php:21
+#: ../functions.php:22
 msgid "Main Navigation"
 msgstr ""
 
 # @ blogberry
-#: functions.php:50
+#: ../functions.php:52
 #, php-format
 msgid "Page %s"
 msgstr ""
 
 # @ seed
-#: functions.php:58
+#: ../functions.php:60
 msgid "Footer Area"
 msgstr ""
 
 # @ blogberry
-#: functions.php:60
+#: ../functions.php:62
 msgid "Appears below content"
 msgstr ""
 
 # @ blogberry
-#: functions.php:67
+#: ../functions.php:69
 msgid "Side Area"
 msgstr ""
 
 # @ blogberry
-#: functions.php:69
+#: ../functions.php:71
 msgid "Appears on side, recommend for 160px width banners"
 msgstr ""
 
 # @ blogberry
-#: header.php:23
+#: ../header.php:23
 msgid "Skip to content"
 msgstr ""
 
 # @ blogberry
-#: header.php:42
+#: ../header.php:42
 msgid "Menu"
 msgstr ""
 
 # @ blogberry
-#: header.php:47
+#: ../header.php:47
 msgid "Search for:"
 msgstr ""
 
-# @ blogberry
-#: inc/kirki-config.php:58
-msgid "Introduction Text"
-msgstr ""
-
-# @ blogberry
-#: inc/kirki-config.php:62
-msgid "Featured Image"
-msgstr ""
-
-# @ blogberry
-#: inc/kirki-config.php:66
-msgid "Footer Text"
-msgstr ""
-
-# @ blogberry
-#: inc/kirki-config.php:128
-msgid "Image Border"
-msgstr ""
-
-# @ blogberry
-#: inc/kirki-config.php:133
-msgid "Add Border"
-msgstr ""
-
-#: inc/kirki-config.php:137 index.php:12
+#: ../index.php:12 ../inc/kirki-config.php:137
 msgid ""
-"<h1>Intro area, introduce yourself here.</h1><h3>You can use HTML (H1-H6) to adjust text size.</h3><h4>And change other options with Customizer: Click "
+"<h1>Intro area, introduce yourself here.</h1><h3>You can use HTML (H1-H6) to "
+"adjust text size.</h3><h4>And change other options with Customizer: Click "
 "Here!</h4>"
 msgstr ""
 
 # @ blogberry
-#: inc/kirki-config.php:141
+#: ../inc/kirki-config.php:58
+msgid "Introduction Text"
+msgstr ""
+
+# @ blogberry
+#: ../inc/kirki-config.php:62
+msgid "Featured Image"
+msgstr ""
+
+# @ blogberry
+#: ../inc/kirki-config.php:66
+msgid "Footer Text"
+msgstr ""
+
+# @ blogberry
+#: ../inc/kirki-config.php:128
+msgid "Image Border"
+msgstr ""
+
+# @ blogberry
+#: ../inc/kirki-config.php:133
+msgid "Add Border"
+msgstr ""
+
+# @ blogberry
+#: ../inc/kirki-config.php:141
 msgid "Text on Home Page"
 msgstr ""
 
 # @ blogberry
-#: inc/kirki-config.php:150
+#: ../inc/kirki-config.php:150
 msgid "Default (Blank) Featured Image"
 msgstr ""
 
 # @ blogberry
-#: inc/kirki-config.php:159
+#: ../inc/kirki-config.php:159
 msgid "Main Color (Links &amp; Intro Background) "
 msgstr ""
 
 # @ blogberry
-#: inc/kirki-config.php:169
+#: ../inc/kirki-config.php:169
 msgid "Side Text Color"
 msgstr ""
 
 # @ blogberry
-#: inc/kirki-config.php:174
+#: ../inc/kirki-config.php:174
 msgid "Black"
 msgstr ""
 
 # @ blogberry
-#: inc/kirki-config.php:175
+#: ../inc/kirki-config.php:175
 msgid "White"
 msgstr ""
 
 # @ blogberry
-#: inc/kirki-config.php:182
+#: ../inc/kirki-config.php:182
 msgid "Copyright"
 msgstr ""
 
-# @ kirki
-#: inc/kirki/includes/controls/class-Kirki_Customize_Color_Control.php:37
-msgid "Default"
+# @ seed
+#: ../inc/seed-functions.php:290
+msgid "https://twitter.com/share"
 msgstr ""
 
 # @ kirki
-#: inc/kirki/includes/controls/class-Kirki_Customize_Image_Control.php:31
+#: ../inc/kirki/includes/controls/class-Kirki_Customize_Color_Control.php:37
+msgid "Default"
+msgstr ""
+
+#: ../inc/kirki/includes/controls/class-Kirki_Customize_Color_Control.php:95
+msgid "Hex Value"
+msgstr ""
+
+# @ kirki
+#: ../inc/kirki/includes/controls/class-Kirki_Customize_Image_Control.php:31
 msgid "No Image"
 msgstr ""
 
 # @ kirki
-#: inc/kirki/includes/controls/class-Kirki_Customize_Image_Control.php:35
+#: ../inc/kirki/includes/controls/class-Kirki_Customize_Image_Control.php:35
 msgid "Upload New"
 msgstr ""
 
 # @ kirki
-#: inc/kirki/includes/controls/class-Kirki_Customize_Image_Control.php:36
+#: ../inc/kirki/includes/controls/class-Kirki_Customize_Image_Control.php:36
 msgid "Uploaded"
 msgstr ""
 
 # @ kirki
-#: inc/kirki/includes/controls/class-Kirki_Customize_Image_Control.php:118
+#: ../inc/kirki/includes/controls/class-Kirki_Customize_Image_Control.php:118
 msgid "Remove Image"
 msgstr ""
 
 # @ default
-#: inc/kirki/includes/controls/class-Kirki_Customize_Image_Control.php:156
+#: ../inc/kirki/includes/controls/class-Kirki_Customize_Image_Control.php:156
 #, php-format
-msgid "The web browser on your device cannot be used to upload files. You may be able to use the <a href=\"%s\">native app for your device</a> instead."
+msgid ""
+"The web browser on your device cannot be used to upload files. You may be "
+"able to use the <a href=\"%s\">native app for your device</a> instead."
 msgstr ""
 
 # @ default
-#: inc/kirki/includes/controls/class-Kirki_Customize_Image_Control.php:160
+#: ../inc/kirki/includes/controls/class-Kirki_Customize_Image_Control.php:160
 msgid "Drop a file here or <a href=\"#\" class=\"upload\">select a file</a>."
 msgstr ""
 
 # @ kirki
-#: inc/kirki/includes/controls/class-Kirki_Customize_Image_Control.php:163
+#: ../inc/kirki/includes/controls/class-Kirki_Customize_Image_Control.php:163
 msgid "Select File"
 msgstr ""
 
 # @ kirki
-#: inc/kirki/includes/controls/class-Kirki_Customize_Upload_Control.php:65
+#: ../inc/kirki/includes/controls/class-Kirki_Customize_Upload_Control.php:65
 msgid "Upload"
 msgstr ""
 
 # @ kirki
-#: inc/kirki/includes/controls/class-Kirki_Customize_Upload_Control.php:66
+#: ../inc/kirki/includes/controls/class-Kirki_Customize_Upload_Control.php:66
 msgid "Remove"
 msgstr ""
 
 # @ gather
-#: inc/kirki/includes/functions/class-Kirki_Fonts.php:132
+#: ../inc/kirki/includes/functions/class-Kirki_Fonts.php:132
 msgid "All"
 msgstr ""
 
 # @ gather
-#: inc/kirki/includes/functions/class-Kirki_Fonts.php:133
+#: ../inc/kirki/includes/functions/class-Kirki_Fonts.php:133
 msgid "Cyrillic"
 msgstr ""
 
 # @ gather
-#: inc/kirki/includes/functions/class-Kirki_Fonts.php:134
+#: ../inc/kirki/includes/functions/class-Kirki_Fonts.php:134
 msgid "Cyrillic Extended"
 msgstr ""
 
 # @ gather
-#: inc/kirki/includes/functions/class-Kirki_Fonts.php:135
+#: ../inc/kirki/includes/functions/class-Kirki_Fonts.php:135
 msgid "Devanagari"
 msgstr ""
 
 # @ gather
-#: inc/kirki/includes/functions/class-Kirki_Fonts.php:136
+#: ../inc/kirki/includes/functions/class-Kirki_Fonts.php:136
 msgid "Greek"
 msgstr ""
 
 # @ gather
-#: inc/kirki/includes/functions/class-Kirki_Fonts.php:137
+#: ../inc/kirki/includes/functions/class-Kirki_Fonts.php:137
 msgid "Greek Extended"
 msgstr ""
 
 # @ gather
-#: inc/kirki/includes/functions/class-Kirki_Fonts.php:138
+#: ../inc/kirki/includes/functions/class-Kirki_Fonts.php:138
 msgid "Khmer"
 msgstr ""
 
 # @ gather
-#: inc/kirki/includes/functions/class-Kirki_Fonts.php:139
+#: ../inc/kirki/includes/functions/class-Kirki_Fonts.php:139
 msgid "Latin"
 msgstr ""
 
 # @ gather
-#: inc/kirki/includes/functions/class-Kirki_Fonts.php:140
+#: ../inc/kirki/includes/functions/class-Kirki_Fonts.php:140
 msgid "Latin Extended"
 msgstr ""
 
 # @ gather
-#: inc/kirki/includes/functions/class-Kirki_Fonts.php:141
+#: ../inc/kirki/includes/functions/class-Kirki_Fonts.php:141
 msgid "Vietnamese"
 msgstr ""
 
 # @ gather
-#: inc/kirki/includes/functions/class-Kirki_Fonts.php:208
+#: ../inc/kirki/includes/functions/class-Kirki_Fonts.php:208
 msgctxt "font style"
 msgid "Serif"
 msgstr ""
 
 # @ gather
-#: inc/kirki/includes/functions/class-Kirki_Fonts.php:212
+#: ../inc/kirki/includes/functions/class-Kirki_Fonts.php:212
 msgctxt "font style"
 msgid "Sans Serif"
 msgstr ""
 
 # @ gather
-#: inc/kirki/includes/functions/class-Kirki_Fonts.php:216
+#: ../inc/kirki/includes/functions/class-Kirki_Fonts.php:216
 msgctxt "font style"
 msgid "Monospaced"
 msgstr ""
 
 # @ kirki
-#: inc/kirki/includes/functions/controls-init.php:95
+#: ../inc/kirki/includes/functions/controls-init.php:95
 msgid "Background Color"
 msgstr ""
 
 # @ kirki
-#: inc/kirki/includes/functions/controls-init.php:107
+#: ../inc/kirki/includes/functions/controls-init.php:107
 msgid "Background Image"
 msgstr ""
 
 # @ kirki
-#: inc/kirki/includes/functions/controls-init.php:119
+#: ../inc/kirki/includes/functions/controls-init.php:119
 msgid "No Repeat"
 msgstr ""
 
 # @ kirki
-#: inc/kirki/includes/functions/controls-init.php:120
+#: ../inc/kirki/includes/functions/controls-init.php:120
 msgid "Repeat All"
 msgstr ""
 
 # @ kirki
-#: inc/kirki/includes/functions/controls-init.php:121
+#: ../inc/kirki/includes/functions/controls-init.php:121
 msgid "Repeat Horizontally"
 msgstr ""
 
 # @ kirki
-#: inc/kirki/includes/functions/controls-init.php:122
+#: ../inc/kirki/includes/functions/controls-init.php:122
 msgid "Repeat Vertically"
 msgstr ""
 
 # @ kirki
-#: inc/kirki/includes/functions/controls-init.php:123 inc/kirki/includes/functions/controls-init.php:138
-#: inc/kirki/includes/functions/controls-init.php:156
+#: ../inc/kirki/includes/functions/controls-init.php:123 ..
+#: /inc/kirki/includes/functions/controls-init.php:138 ..
+#: /inc/kirki/includes/functions/controls-init.php:156
 msgid "Inherit"
 msgstr ""
 
 # @ kirki
-#: inc/kirki/includes/functions/controls-init.php:126
+#: ../inc/kirki/includes/functions/controls-init.php:126
 msgid "Background Repeat"
 msgstr ""
 
 # @ kirki
-#: inc/kirki/includes/functions/controls-init.php:139
+#: ../inc/kirki/includes/functions/controls-init.php:139
 msgid "Cover"
 msgstr ""
 
 # @ kirki
-#: inc/kirki/includes/functions/controls-init.php:140
+#: ../inc/kirki/includes/functions/controls-init.php:140
 msgid "Contain"
 msgstr ""
 
 # @ kirki
-#: inc/kirki/includes/functions/controls-init.php:144
+#: ../inc/kirki/includes/functions/controls-init.php:144
 msgid "Background Size"
 msgstr ""
 
 # @ kirki
-#: inc/kirki/includes/functions/controls-init.php:157
+#: ../inc/kirki/includes/functions/controls-init.php:157
 msgid "Fixed"
 msgstr ""
 
 # @ kirki
-#: inc/kirki/includes/functions/controls-init.php:158
+#: ../inc/kirki/includes/functions/controls-init.php:158
 msgid "Scroll"
 msgstr ""
 
 # @ kirki
-#: inc/kirki/includes/functions/controls-init.php:162
+#: ../inc/kirki/includes/functions/controls-init.php:162
 msgid "Background Attachment"
 msgstr ""
 
 # @ kirki
-#: inc/kirki/includes/functions/controls-init.php:174
+#: ../inc/kirki/includes/functions/controls-init.php:174
 msgid "Left Top"
 msgstr ""
 
 # @ kirki
-#: inc/kirki/includes/functions/controls-init.php:175
+#: ../inc/kirki/includes/functions/controls-init.php:175
 msgid "Left Center"
 msgstr ""
 
 # @ kirki
-#: inc/kirki/includes/functions/controls-init.php:176
+#: ../inc/kirki/includes/functions/controls-init.php:176
 msgid "Left Bottom"
 msgstr ""
 
 # @ kirki
-#: inc/kirki/includes/functions/controls-init.php:177
+#: ../inc/kirki/includes/functions/controls-init.php:177
 msgid "Right Top"
 msgstr ""
 
 # @ kirki
-#: inc/kirki/includes/functions/controls-init.php:178
+#: ../inc/kirki/includes/functions/controls-init.php:178
 msgid "Right Center"
 msgstr ""
 
 # @ kirki
-#: inc/kirki/includes/functions/controls-init.php:179
+#: ../inc/kirki/includes/functions/controls-init.php:179
 msgid "Right Bottom"
 msgstr ""
 
 # @ kirki
-#: inc/kirki/includes/functions/controls-init.php:180
+#: ../inc/kirki/includes/functions/controls-init.php:180
 msgid "Center Top"
 msgstr ""
 
 # @ kirki
-#: inc/kirki/includes/functions/controls-init.php:181
+#: ../inc/kirki/includes/functions/controls-init.php:181
 msgid "Center Center"
 msgstr ""
 
 # @ kirki
-#: inc/kirki/includes/functions/controls-init.php:182
+#: ../inc/kirki/includes/functions/controls-init.php:182
 msgid "Center Bottom"
 msgstr ""
 
 # @ kirki
-#: inc/kirki/includes/functions/controls-init.php:185
+#: ../inc/kirki/includes/functions/controls-init.php:185
 msgid "Background Position"
 msgstr ""
 
 # @ kirki
-#: inc/kirki/includes/functions/controls-init.php:203
+#: ../inc/kirki/includes/functions/controls-init.php:203
 msgid "Background Opacity"
-msgstr ""
-
-# @ seed
-#: inc/seed-functions.php:290
-msgid "https://twitter.com/share"
 msgstr ""
