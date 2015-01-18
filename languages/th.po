@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Blogberry v1.9.8\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-01-18 14:39+0700\n"
-"PO-Revision-Date: 2015-01-18 14:40+0700\n"
+"PO-Revision-Date: 2015-01-18 15:33+0700\n"
 "Last-Translator: gapgag55 <zxc5546@hotmail.com>\n"
 "Language-Team: \n"
 "Language: th_TH\n"
@@ -13,8 +13,8 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Poedit 1.7.3\n"
 "X-Poedit-SourceCharset: utf-8\n"
-"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;"
-"_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,"
+"_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
 "X-Poedit-Basepath: ../\n"
 "X-Textdomain-Support: yes\n"
 "X-Poedit-SearchPath-0: .\n"
@@ -26,9 +26,7 @@ msgstr "ค้นหาไม่เจอใช่หรือไม่?"
 
 # @ blogberry
 #: 404.php:9
-msgid ""
-"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can "
-"help."
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
 msgstr "ลองกรอกข้อมูลเพื่อค้นหาอีกครั้ง"
 
 # @ seed
@@ -42,7 +40,7 @@ msgstr[1] "ความคิดเห็น"
 # @ blogberry
 #: comments.php:39 comments.php:57
 msgid "Comment navigation"
-msgstr ""
+msgstr "ความคิดเห็นหน้าต่างๆ"
 
 # @ blogberry
 #: comments.php:40 comments.php:58
@@ -67,7 +65,7 @@ msgstr "สร้างจาก WordPress"
 # @ blogberry
 #: footer.php:12
 msgid "SeedThemes"
-msgstr ""
+msgstr "ซี้ด ธีมส์"
 
 # @ blogberry
 #: functions.php:21
@@ -83,12 +81,12 @@ msgstr "หน้า %s"
 # @ seed
 #: functions.php:58
 msgid "Footer Area"
-msgstr ""
+msgstr "พื้นที่ด้านล่าง"
 
 # @ blogberry
 #: functions.php:60
 msgid "Appears below content"
-msgstr "พื้นที่ด้านล่าง"
+msgstr "ปรากฏใต้เนื้อหาเว็บ"
 
 # @ blogberry
 #: functions.php:67
@@ -98,12 +96,12 @@ msgstr "พื้นที่ด้านข้าง"
 # @ blogberry
 #: functions.php:69
 msgid "Appears on side, recommend for 160px width banners"
-msgstr "ปรากฏอยู่ด้านข้างแนะนำให้ใช้ Banner ที่กว้าง 160px"
+msgstr "ปรากฏอยู่ด้านข้างแนะนำให้ใช้แบนเนอร์ที่กว้าง 160px"
 
 # @ blogberry
 #: header.php:23
 msgid "Skip to content"
-msgstr "ข้ามเนื้อหา"
+msgstr "ข้ามไปที่เนื้อหา"
 
 # @ blogberry
 #: header.php:42
@@ -142,11 +140,11 @@ msgstr "เพิ่มเส้นขอบ"
 
 #: inc/kirki-config.php:137 index.php:12
 msgid ""
-"<h1>Intro area, introduce yourself here.</h1><h3>You can use HTML (H1-H6) to adjust "
-"text size.</h3><h4>And change other options with Customizer: Click Here!</h4>"
+"<h1>Intro area, introduce yourself here.</h1><h3>You can use HTML (H1-H6) to adjust text size."
+"</h3><h4>And change other options with Customizer: Click Here!</h4>"
 msgstr ""
-"<h1>พื้นที่แนะนำตัว สามารถแนะนำตัวเองได้ที่นี่</h1><h3>คุณสามารถใช้ HTML (H1-H6) "
-"เพื่อปรับขนาดข้อความ</h3><h4>และเปลี่ยนตัวเลือกอื่นๆ  ในเมนูปรับแต่ง: คลิกที่นี่</h4>"
+"<h1>พื้นที่แนะนำตัว สามารถแนะนำตัวเองได้ที่นี่</h1><h3>คุณสามารถใช้ HTML (H1-H6) เพื่อปรับขนาดข้อความ</"
+"h3><h4>และเปลี่ยนตัวเลือกอื่นๆ  ในเมนูปรับแต่ง: คลิกที่นี่</h4>"
 
 # @ blogberry
 #: inc/kirki-config.php:141
@@ -186,260 +184,261 @@ msgstr "ข้อความลิขสิทธิ์"
 # @ kirki
 #: inc/kirki/includes/controls/class-Kirki_Customize_Color_Control.php:37
 msgid "Default"
-msgstr ""
+msgstr "ค่าหลัก"
 
 # @ kirki
 #: inc/kirki/includes/controls/class-Kirki_Customize_Image_Control.php:31
 msgid "No Image"
-msgstr ""
+msgstr "﻿ไม่มีภาพ"
 
 # @ kirki
 #: inc/kirki/includes/controls/class-Kirki_Customize_Image_Control.php:35
 msgid "Upload New"
-msgstr ""
+msgstr "﻿อัปโหลดใหม่"
 
 # @ kirki
 #: inc/kirki/includes/controls/class-Kirki_Customize_Image_Control.php:36
 msgid "Uploaded"
-msgstr ""
+msgstr "﻿อัปโหลดแล้ว"
 
 # @ kirki
 #: inc/kirki/includes/controls/class-Kirki_Customize_Image_Control.php:118
 msgid "Remove Image"
-msgstr ""
+msgstr "﻿ลบภาพ"
 
 # @ default
 #: inc/kirki/includes/controls/class-Kirki_Customize_Image_Control.php:156
 #, php-format
 msgid ""
-"The web browser on your device cannot be used to upload files. You may be able to "
-"use the <a href=\"%s\">native app for your device</a> instead."
+"The web browser on your device cannot be used to upload files. You may be able to use the <a "
+"href=\"%s\">native app for your device</a> instead."
 msgstr ""
+"﻿เว็บเบราเซอร์บนอุปกรณ์ของคุณไม่สามารถใช้ในการอัปโหลดไฟล์ คุณอาจจะสามารถใช้ <a href=\"%s"
+"\">แอพพลิเคชั่นสำหรับอุปกรณ์ของคุณ</a> แทน"
 
 # @ default
 #: inc/kirki/includes/controls/class-Kirki_Customize_Image_Control.php:160
 msgid "Drop a file here or <a href=\"#\" class=\"upload\">select a file</a>."
-msgstr ""
+msgstr "﻿วางไฟล์ที่นี่หรือ <a href=\"#\" class=\"upload\">เลือกไฟล์</a>"
 
 # @ kirki
 #: inc/kirki/includes/controls/class-Kirki_Customize_Image_Control.php:163
 msgid "Select File"
-msgstr ""
+msgstr "﻿เลือกไฟล์"
 
 # @ kirki
 #: inc/kirki/includes/controls/class-Kirki_Customize_Upload_Control.php:65
 msgid "Upload"
-msgstr ""
+msgstr "﻿อัปโหลด"
 
 # @ kirki
 #: inc/kirki/includes/controls/class-Kirki_Customize_Upload_Control.php:66
 msgid "Remove"
-msgstr ""
+msgstr "﻿ลบ"
 
 # @ gather
 #: inc/kirki/includes/functions/class-Kirki_Fonts.php:132
 msgid "All"
-msgstr ""
+msgstr "ทั้งหมด"
 
 # @ gather
 #: inc/kirki/includes/functions/class-Kirki_Fonts.php:133
 msgid "Cyrillic"
-msgstr ""
+msgstr "﻿ซิริลลิก"
 
 # @ gather
 #: inc/kirki/includes/functions/class-Kirki_Fonts.php:134
 msgid "Cyrillic Extended"
-msgstr ""
+msgstr "﻿ซีริลลิขยาย"
 
 # @ gather
 #: inc/kirki/includes/functions/class-Kirki_Fonts.php:135
 msgid "Devanagari"
-msgstr ""
+msgstr "﻿อักษรเทวนาครี"
 
 # @ gather
 #: inc/kirki/includes/functions/class-Kirki_Fonts.php:136
 msgid "Greek"
-msgstr ""
+msgstr "﻿กรีก"
 
 # @ gather
 #: inc/kirki/includes/functions/class-Kirki_Fonts.php:137
 msgid "Greek Extended"
-msgstr ""
+msgstr "﻿กรีกขยาย"
 
 # @ gather
 #: inc/kirki/includes/functions/class-Kirki_Fonts.php:138
 msgid "Khmer"
-msgstr ""
+msgstr "﻿ขอม"
 
 # @ gather
 #: inc/kirki/includes/functions/class-Kirki_Fonts.php:139
 msgid "Latin"
-msgstr ""
+msgstr "ละติน"
 
 # @ gather
 #: inc/kirki/includes/functions/class-Kirki_Fonts.php:140
 msgid "Latin Extended"
-msgstr ""
+msgstr "﻿ละตินขยาย"
 
 # @ gather
 #: inc/kirki/includes/functions/class-Kirki_Fonts.php:141
 msgid "Vietnamese"
-msgstr ""
+msgstr "﻿เวียดนาม"
 
 # @ gather
 #: inc/kirki/includes/functions/class-Kirki_Fonts.php:208
 msgctxt "font style"
 msgid "Serif"
-msgstr ""
+msgstr "ฟอนต์มีฐาน"
 
 # @ gather
 #: inc/kirki/includes/functions/class-Kirki_Fonts.php:212
 msgctxt "font style"
 msgid "Sans Serif"
-msgstr ""
+msgstr "ฟอนต์ไร้ฐาน"
 
 # @ gather
 #: inc/kirki/includes/functions/class-Kirki_Fonts.php:216
 msgctxt "font style"
 msgid "Monospaced"
-msgstr ""
+msgstr "ฟอนต์พิมพ์ดีด"
 
 # @ kirki
 #: inc/kirki/includes/functions/controls-init.php:95
 msgid "Background Color"
-msgstr ""
+msgstr "﻿สีพื้นหลัง"
 
 # @ kirki
 #: inc/kirki/includes/functions/controls-init.php:107
 msgid "Background Image"
-msgstr ""
+msgstr "รูปพื้นหลัง"
 
 # @ kirki
 #: inc/kirki/includes/functions/controls-init.php:119
 msgid "No Repeat"
-msgstr ""
+msgstr "﻿ไม่ซ้ำ"
 
 # @ kirki
 #: inc/kirki/includes/functions/controls-init.php:120
 msgid "Repeat All"
-msgstr ""
+msgstr "﻿ทำซ้ำทั้งหมด"
 
 # @ kirki
 #: inc/kirki/includes/functions/controls-init.php:121
 msgid "Repeat Horizontally"
-msgstr ""
+msgstr "﻿ทำซ้ำแนวนอน"
 
 # @ kirki
 #: inc/kirki/includes/functions/controls-init.php:122
 msgid "Repeat Vertically"
-msgstr ""
+msgstr "﻿ทำซ้ำในแนวตั้ง"
 
 # @ kirki
 #: inc/kirki/includes/functions/controls-init.php:123
 #: inc/kirki/includes/functions/controls-init.php:138
 #: inc/kirki/includes/functions/controls-init.php:156
 msgid "Inherit"
-msgstr ""
+msgstr "﻿สืบทอด"
 
 # @ kirki
 #: inc/kirki/includes/functions/controls-init.php:126
 msgid "Background Repeat"
-msgstr ""
+msgstr "ทำซ้ำพื้นหลัง"
 
 # @ kirki
 #: inc/kirki/includes/functions/controls-init.php:139
 msgid "Cover"
-msgstr ""
+msgstr "เต็มพื้นหลัง"
 
 # @ kirki
 #: inc/kirki/includes/functions/controls-init.php:140
 msgid "Contain"
-msgstr ""
+msgstr "เต็มรูป"
 
 # @ kirki
 #: inc/kirki/includes/functions/controls-init.php:144
 msgid "Background Size"
-msgstr ""
+msgstr "ขนาดพื้นหลัง"
 
 # @ kirki
 #: inc/kirki/includes/functions/controls-init.php:157
 msgid "Fixed"
-msgstr ""
+msgstr "ไม่เลื่อนตามเนื้อหา"
 
 # @ kirki
 #: inc/kirki/includes/functions/controls-init.php:158
 msgid "Scroll"
-msgstr ""
+msgstr "﻿เลื่อนตามเนื้อหา"
 
 # @ kirki
 #: inc/kirki/includes/functions/controls-init.php:162
 msgid "Background Attachment"
-msgstr ""
+msgstr "รูปพื้นหลัง"
 
 # @ kirki
 #: inc/kirki/includes/functions/controls-init.php:174
 msgid "Left Top"
-msgstr ""
+msgstr "﻿ด้านบนซ้าย"
 
 # @ kirki
 #: inc/kirki/includes/functions/controls-init.php:175
 msgid "Left Center"
-msgstr ""
+msgstr "ด้านซ้ายกึ่งกลาง"
 
 # @ kirki
 #: inc/kirki/includes/functions/controls-init.php:176
 msgid "Left Bottom"
-msgstr ""
+msgstr "ด้านล่างซ้าย"
 
 # @ kirki
 #: inc/kirki/includes/functions/controls-init.php:177
 msgid "Right Top"
-msgstr ""
+msgstr "﻿ด้านบนขวา"
 
 # @ kirki
 #: inc/kirki/includes/functions/controls-init.php:178
 msgid "Right Center"
-msgstr ""
+msgstr "﻿ด้านขวากึ่งกลาง"
 
 # @ kirki
 #: inc/kirki/includes/functions/controls-init.php:179
 msgid "Right Bottom"
-msgstr ""
+msgstr "﻿ด้านล่างขวา"
 
 # @ kirki
 #: inc/kirki/includes/functions/controls-init.php:180
 msgid "Center Top"
-msgstr ""
+msgstr "จัดกลางติดขอบบน"
 
 # @ kirki
 #: inc/kirki/includes/functions/controls-init.php:181
 msgid "Center Center"
-msgstr ""
+msgstr "จัดกลางทั้งบนล่างซ้ายขวา"
 
 # @ kirki
 #: inc/kirki/includes/functions/controls-init.php:182
 msgid "Center Bottom"
-msgstr ""
+msgstr "จัดกลางติดขอบล่าง"
 
 # @ kirki
 #: inc/kirki/includes/functions/controls-init.php:185
 msgid "Background Position"
-msgstr ""
+msgstr "﻿ตำแหน่งพื้นหลัง"
 
 # @ kirki
 #: inc/kirki/includes/functions/controls-init.php:203
 msgid "Background Opacity"
-msgstr ""
+msgstr "ความโปร่งแสงของพื้นหลัง"
 
 # @ seed
 #: inc/seed-functions.php:290
 msgid "https://twitter.com/share"
-msgstr ""
+msgstr "https://twitter.com/share"
 
 #~ msgid ""
-#~ "<h1>Intro area, introduce yourself here.</h1>\\r\\n<h3>You can use HTML (H1-H6) "
-#~ "to adjust text size.</h3>\\r\\n<h4>And change other options with Customizer: "
-#~ "Click Here!</h4>"
+#~ "<h1>Intro area, introduce yourself here.</h1>\\r\\n<h3>You can use HTML (H1-H6) to adjust "
+#~ "text size.</h3>\\r\\n<h4>And change other options with Customizer: Click Here!</h4>"
 #~ msgstr ""
 #~ "﻿<h1>พื้นที่แนะนำ แนะนำตัวเองที่นี่</h1><h3>คุณสามารถใช้ HTML (H1-H6) เพื่อปรับขนาดข้อความ</"
 #~ "h3><h4>และเปลี่ยนตัวเลือกอื่น ๆ พร้อมกำหนด: คลิกที่นี่</h4>"

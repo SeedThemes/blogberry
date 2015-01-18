@@ -7,7 +7,7 @@ Description: Minimal theme for blogger.
 Version: 2.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: one-column, two-columns, custom-background, custom-menu, featured-images, sticky-post, theme-options
+Tags: one-column, two-columns, custom-background, custom-colors, custom-menu, featured-images, sticky-post
 Text Domain: blogberry
 
 This theme, like WordPress, is licensed under the GPL.
@@ -34,6 +34,7 @@ body{
 
 a{
 	color: #68944a;
+	cursor: pointer !important;
 }
 
 a:hover{
@@ -405,6 +406,24 @@ h1.title {
 	margin: 0 0 30px;
 }
 
+.pagination li{
+	display: inline-block;
+}
+.pagination li span,
+.pagination li a{
+	display: inline-block;
+	padding: 4px 12px;
+
+	border: 1px solid #ddd;	
+	border-left: none;
+}
+.pagination li.active{
+	font-weight: bold;
+}
+.pagination li:first-child span,
+.pagination li:first-child a {
+	border-left: 1px solid #ddd;	
+}
 #content .fb-comments{
 	padding: 10px 0 2px;
 	clear: both;

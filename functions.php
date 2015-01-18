@@ -13,6 +13,7 @@
 
 if ( ! isset( $content_width ) ) $content_width = 650;
 define( 'NO_HEADER_TEXT', true );
+
 load_theme_textdomain( 'blogberry', get_template_directory() .'/languages' );
 
 function seed_setup() {
@@ -21,6 +22,7 @@ function seed_setup() {
 	register_nav_menus( array('main' => __( 'Main Navigation', 'blogberry' )));
 	add_theme_support( 'custom-background', array('default-color' => 'e4e4e4'));
 	add_theme_support( 'post-thumbnails' );
+	add_theme_support( 'title-tag' );
 	set_post_thumbnail_size( 150, 150, TRUE );
 	$defaults = array(
 		'default-image' => get_template_directory_uri() . '/img/default-logo.png',

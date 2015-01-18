@@ -140,7 +140,7 @@ function blogberry_setting( $controls ) {
 		'setting'  => 'intro-text',
 		'label'    => __( 'Text on Home Page', 'blogberry' ),
 		'section'  => 'intro',
-		'default'  => __( $introtext, 'blogberry' ),
+		'default'  => $introtext,
 		'priority' => 5,
 		);
 
