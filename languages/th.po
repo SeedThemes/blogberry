@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Blogberry v1.9.8\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-01-18 14:39+0700\n"
-"PO-Revision-Date: 2015-01-18 15:33+0700\n"
+"PO-Revision-Date: 2015-01-18 17:53+0700\n"
 "Last-Translator: gapgag55 <zxc5546@hotmail.com>\n"
 "Language-Team: \n"
 "Language: th_TH\n"
@@ -13,8 +13,8 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Poedit 1.7.3\n"
 "X-Poedit-SourceCharset: utf-8\n"
-"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,"
-"_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;"
+"_nx_noop:4c,1,2\n"
 "X-Poedit-Basepath: ../\n"
 "X-Textdomain-Support: yes\n"
 "X-Poedit-SearchPath-0: .\n"
@@ -140,11 +140,11 @@ msgstr "เพิ่มเส้นขอบ"
 
 #: inc/kirki-config.php:137 index.php:12
 msgid ""
-"<h1>Intro area, introduce yourself here.</h1><h3>You can use HTML (H1-H6) to adjust text size."
-"</h3><h4>And change other options with Customizer: Click Here!</h4>"
+"<h1>Intro area, introduce yourself here.</h1><h3>You can use HTML (H1-H6) to adjust text size.</h3><h4>And change other "
+"options with Customizer: Click Here!</h4>"
 msgstr ""
-"<h1>พื้นที่แนะนำตัว สามารถแนะนำตัวเองได้ที่นี่</h1><h3>คุณสามารถใช้ HTML (H1-H6) เพื่อปรับขนาดข้อความ</"
-"h3><h4>และเปลี่ยนตัวเลือกอื่นๆ  ในเมนูปรับแต่ง: คลิกที่นี่</h4>"
+"<h1>พื้นที่แนะนำตัว สามารถแนะนำตัวเองได้ที่นี่</h1><h3>คุณสามารถใช้ HTML (H1-H6) เพื่อปรับขนาดข้อความ</h3><h4>และเปลี่ยนตัวเลือกอื่นๆ  ในเมนูปรับแต่ง: "
+"คลิกที่นี่</h4>"
 
 # @ blogberry
 #: inc/kirki-config.php:141
@@ -159,7 +159,7 @@ msgstr "รูปพิเศษเริ่มต้น"
 # @ blogberry
 #: inc/kirki-config.php:159
 msgid "Main Color (Links &amp; Intro Background) "
-msgstr "สีพื้นหลังข้อความและสีลิ้ง"
+msgstr "สีพื้นหลังข้อความแนะนำตัวและสีลิงก์"
 
 # @ blogberry
 #: inc/kirki-config.php:169
@@ -210,11 +210,9 @@ msgstr "﻿ลบภาพ"
 #: inc/kirki/includes/controls/class-Kirki_Customize_Image_Control.php:156
 #, php-format
 msgid ""
-"The web browser on your device cannot be used to upload files. You may be able to use the <a "
-"href=\"%s\">native app for your device</a> instead."
-msgstr ""
-"﻿เว็บเบราเซอร์บนอุปกรณ์ของคุณไม่สามารถใช้ในการอัปโหลดไฟล์ คุณอาจจะสามารถใช้ <a href=\"%s"
-"\">แอพพลิเคชั่นสำหรับอุปกรณ์ของคุณ</a> แทน"
+"The web browser on your device cannot be used to upload files. You may be able to use the <a href=\"%s\">native app for your "
+"device</a> instead."
+msgstr "﻿เว็บเบราเซอร์บนอุปกรณ์ของคุณไม่สามารถใช้ในการอัปโหลดไฟล์ คุณอาจจะสามารถใช้ <a href=\"%s\">แอพพลิเคชั่นสำหรับอุปกรณ์ของคุณ</a> แทน"
 
 # @ default
 #: inc/kirki/includes/controls/class-Kirki_Customize_Image_Control.php:160
@@ -335,8 +333,7 @@ msgid "Repeat Vertically"
 msgstr "﻿ทำซ้ำในแนวตั้ง"
 
 # @ kirki
-#: inc/kirki/includes/functions/controls-init.php:123
-#: inc/kirki/includes/functions/controls-init.php:138
+#: inc/kirki/includes/functions/controls-init.php:123 inc/kirki/includes/functions/controls-init.php:138
 #: inc/kirki/includes/functions/controls-init.php:156
 msgid "Inherit"
 msgstr "﻿สืบทอด"
@@ -437,8 +434,8 @@ msgid "https://twitter.com/share"
 msgstr "https://twitter.com/share"
 
 #~ msgid ""
-#~ "<h1>Intro area, introduce yourself here.</h1>\\r\\n<h3>You can use HTML (H1-H6) to adjust "
-#~ "text size.</h3>\\r\\n<h4>And change other options with Customizer: Click Here!</h4>"
+#~ "<h1>Intro area, introduce yourself here.</h1>\\r\\n<h3>You can use HTML (H1-H6) to adjust text size.</h3>\\r\\n<h4>And "
+#~ "change other options with Customizer: Click Here!</h4>"
 #~ msgstr ""
-#~ "﻿<h1>พื้นที่แนะนำ แนะนำตัวเองที่นี่</h1><h3>คุณสามารถใช้ HTML (H1-H6) เพื่อปรับขนาดข้อความ</"
-#~ "h3><h4>และเปลี่ยนตัวเลือกอื่น ๆ พร้อมกำหนด: คลิกที่นี่</h4>"
+#~ "﻿<h1>พื้นที่แนะนำ แนะนำตัวเองที่นี่</h1><h3>คุณสามารถใช้ HTML (H1-H6) เพื่อปรับขนาดข้อความ</h3><h4>และเปลี่ยนตัวเลือกอื่น ๆ พร้อมกำหนด: คลิกที่นี่</"
+#~ "h4>"
