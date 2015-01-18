@@ -9,9 +9,7 @@
 		<?php else: ?>
 			<?php if (current_user_can( 'manage_options' )) : ?>
 				<a href="<?php echo esc_url( admin_url() .'customize.php');?>" class="edit-this-intro" />
-					<h1>Intro area, introduce yourself here.</h1> 
-					<h3>You can use HTML (H1-H6) to adjust text size.</h3>
-					<h4>And change other options with Customizer: Click Here!</h4>
+					<?php _e('<h1>Intro area, introduce yourself here.</h1><h3>You can use HTML (H1-H6) to adjust text size.</h3><h4>And change other options with Customizer: Click Here!</h4>', 'blogberry');?>
 				</a>
 			<?php else: ?>
 				<h2><?php bloginfo( 'description' ); ?></h2>

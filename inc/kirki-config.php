@@ -134,7 +134,7 @@ function blogberry_setting( $controls ) {
 			),
 		);
 
-	$introtext = "<h1>Intro area, introduce yourself here.</h1>\r\n<h3>You can use HTML (H1-H6) to adjust text size.</h3>\r\n<h4>And change other options with Customizer: Click Here!</h4>";
+	$introtext = __('<h1>Intro area, introduce yourself here.</h1><h3>You can use HTML (H1-H6) to adjust text size.</h3><h4>And change other options with Customizer: Click Here!</h4>', 'blogberry');
 	$controls[] = array(
 		'type'     => 'textarea',
 		'setting'  => 'intro-text',

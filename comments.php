@@ -29,7 +29,7 @@ if ( post_password_required() ) {
 	<?php if ( have_comments() ) : ?>
 		<h4 class="comments-title">
 			<?php
-			printf( _nx( 'Comment', 'Comments', get_comments_number(), 'comments title', 'seed' ),
+			printf( _nx( 'Comment', 'Comments', get_comments_number(), 'comments title', 'blogberry' ),
 				number_format_i18n( get_comments_number() ) );
 				?>
 			</h4>
