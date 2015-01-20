@@ -24,4 +24,4 @@ You can find all icons [here](http://fontawesome.io/icons/).
 
 ## Support
 
-While we are on process to list on WordPress.org, You can ask question and get support from info@seedthemes.com.
+While we are on process to list on WordPress.org, You can ask question and get support from info@mennstudio.com.
