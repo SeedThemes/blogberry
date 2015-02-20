@@ -75,24 +75,28 @@ function blogberry_section( $wp_customize ) {
 		'default'        => '',
 		'type'           => 'theme_mod',
 		'capability'     => 'edit_theme_options',
+		'sanitize_callback' => 'esc_url_raw'
 		) );
 
 	$wp_customize->add_setting( 'bg', array(
 		'default'        => '',
 		'type'           => 'theme_mod',
 		'capability'     => 'edit_theme_options',
+		'sanitize_callback' => 'esc_url_raw'
 		) );
 
 	$wp_customize->add_setting( 'postpic', array(
 		'default'        => '',
 		'type'           => 'theme_mod',
 		'capability'     => 'edit_theme_options',
+		'sanitize_callback' => 'esc_url_raw'
 		) );
 
 	$wp_customize->add_setting( 'main-color', array(
 		'default'        => '#68944a',
 		'type'           => 'theme_mod',
 		'capability'     => 'edit_theme_options',
+		'sanitize_callback' => 'esc_url_raw'
 		) );
 
 
@@ -100,6 +104,7 @@ function blogberry_section( $wp_customize ) {
 		'default'        => '#fff',
 		'type'           => 'theme_mod',
 		'capability'     => 'edit_theme_options',
+		'sanitize_callback' => 'esc_url_raw'
 		) );
 
 
@@ -107,12 +112,14 @@ function blogberry_section( $wp_customize ) {
 		'default'        => '',
 		'type'           => 'theme_mod',
 		'capability'     => 'edit_theme_options',
+		'sanitize_callback' => 'esc_url_raw'
 		) );
 
 	$wp_customize->add_setting( 'copyright', array(
 		'default'        => '',
 		'type'           => 'theme_mod',
 		'capability'     => 'edit_theme_options',
+		'sanitize_callback' => 'esc_url_raw'
 		) );		
 
 }
